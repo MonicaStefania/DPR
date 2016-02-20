@@ -8,7 +8,7 @@ namespace DiskScheduling
 {
     class FIFO:DiskSchedule
     {
-        public int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
+        public int[] numbers = new int[] { 24, 45, 3, 49, 100, 6, 2, 13, 16, 11, 12, 47, 48, 28, 50, 10, 62 };
 
         public int[] Schedule()
         {

@@ -18,12 +18,12 @@ namespace DiskScheduling
         bool doneSignal = false;
         int currentValue;
         List<int> myList = new List<int>();
-
+       
         int[] num = new int[100];
         public Form1()
         {
             InitializeComponent();
-            
+            radioButton1.Checked = true;
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -39,39 +39,7 @@ namespace DiskScheduling
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (radioButton1.Checked)
-            {
-                d = new FIFO();
-                OS = new OperatinSystem(d);
-                timer1.Start();
-                listBox1.Items.Clear();
-                num = OS.performDiskSchedule();
-                foreach (int i in num)
-                {
-                    listBox1.Items.Add(i);
-                    myList.Add(i);
-
-                }
-            }
-            else { if (radioButton2.Checked)
-                {
-                    d = new ShortestSeekTime();
-                    OS = new OperatinSystem(d);
-                    timer1.Start();
-                    listBox1.Items.Clear();
-                    num = OS.performDiskSchedule();
-                    foreach (int i in num)
-                    {
-                        listBox1.Items.Add(i);
-                        myList.Add(i);
-
-                    }
-                }
-                else {  if (radioButton3.Checked)
-                    {
-                        d = new SCAN();
-                        OS = new OperatinSystem(d);
-                        timer1.Start();
+         timer1.Start();
                         listBox1.Items.Clear();
                         num = OS.performDiskSchedule();
                         foreach (int i in num)
@@ -81,10 +49,8 @@ namespace DiskScheduling
 
 
                         }
-                    }
-                }
-            }
-
+                    
+                
             }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -127,6 +93,47 @@ namespace DiskScheduling
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            this.listBox1.Items.Clear();
+            this.textBox1.Clear();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            button2.PerformClick();
+            d = new FIFO();
+            OS = new OperatinSystem(d);
+            button1.PerformClick();
+           
+           
+            
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton1.Checked = false;
+            radioButton3.Checked = false;
+            button2.PerformClick();
+            d = new ShortestSeekTime();
+            OS = new OperatinSystem(d);
+            button1.PerformClick();
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            button2.PerformClick();
+            d = new SCAN();
+            OS = new OperatinSystem(d);
+            button1.PerformClick();
 
         }
     }
