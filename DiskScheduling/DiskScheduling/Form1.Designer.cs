@@ -55,10 +55,10 @@
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -354,6 +354,33 @@
             this.panel3.Size = new System.Drawing.Size(258, 85);
             this.panel3.TabIndex = 26;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(10, 58);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(110, 15);
+            this.label24.TabIndex = 3;
+            this.label24.Text = "position of the heads.";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(7, 45);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(205, 15);
+            this.label23.TabIndex = 2;
+            this.label23.Text = " they arrive, without regard to the current ";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(10, 31);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(197, 15);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "In FCFS, we process the requests in the ";
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -365,33 +392,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "First Come First Served";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(10, 31);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(197, 15);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "In FCFS, we process the requests in the ";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(7, 45);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(205, 15);
-            this.label23.TabIndex = 2;
-            this.label23.Text = " they arrive, without regard to the current ";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(10, 58);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(110, 15);
-            this.label24.TabIndex = 3;
-            this.label24.Text = "position of the heads.";
             // 
             // panel4
             // 
@@ -503,6 +503,7 @@
             this.button1.Size = new System.Drawing.Size(58, 54);
             this.button1.TabIndex = 30;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label29
             // 
