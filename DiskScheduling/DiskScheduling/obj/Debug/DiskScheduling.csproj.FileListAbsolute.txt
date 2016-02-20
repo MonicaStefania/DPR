@@ -1,1 +1,10 @@
 D:\Documents\2015-2016\Block7\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.exe.config
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.exe.config
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.exe
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.pdb
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.csprojResolveAssemblyReference.cache
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.Form1.resources
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.Properties.Resources.resources
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.csproj.GenerateResource.Cache
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.exe
+D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.pdb
