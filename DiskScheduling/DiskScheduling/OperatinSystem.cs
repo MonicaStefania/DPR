@@ -12,7 +12,7 @@ namespace DiskScheduling
 
         public OperatinSystem(DiskSchedule d)
         {
-            d = dk;
+            dk = d;
         }
         public void setDiskSchedule()
         {

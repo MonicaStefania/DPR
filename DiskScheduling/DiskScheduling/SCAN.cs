@@ -12,7 +12,7 @@ namespace DiskScheduling
         public int[] Schedule()
         {
             List<int> sorted = new List<int>();
-            for (int i = 0; i <= numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
                 sorted.Add(numbers.Min());
                 numbers = numbers.Except(new int[] { numbers.Min() }).ToArray();

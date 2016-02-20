@@ -11,8 +11,9 @@ namespace DiskScheduling
         public int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
         public int[] Schedule()
         {
+            List<int> sorted = new List<int>();
             int a = numbers[0];
-            for (int i = 1; i < numbers.Length; i++)
+            for (int i = 1; i < numbers.Length-1; i++)
             {
 
                 int x = a - numbers[i + 1];
@@ -33,8 +34,9 @@ namespace DiskScheduling
                 {
                     a = numbers[i - 1];
                 }
+                sorted.Add(a);
             }
-            return numbers;
+            return sorted.ToArray();
         }
     }
 }

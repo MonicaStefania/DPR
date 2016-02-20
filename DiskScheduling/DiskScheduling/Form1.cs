@@ -16,11 +16,11 @@ namespace DiskScheduling
         OperatinSystem OS;
         DiskSchedule d;
 
-        //int[] num = new int[100];
+        int[] num = new int[100];
         public Form1()
         {
             InitializeComponent();
-            OS = new OperatinSystem(d);
+            
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -38,17 +38,32 @@ namespace DiskScheduling
 
             if (radioButton1.Checked)
             {
-                //d = new FIFO();
-                d = new SCAN();
+                d = new FIFO();
+                OS = new OperatinSystem(d);
                 timer1.Start();
             }
-        
-                  }
+            else { if (radioButton2.Checked)
+                {
+                    d = new ShortestSeekTime();
+                    OS = new OperatinSystem(d);
+                    timer1.Start();
+                }
+                else {  if (radioButton3.Checked)
+                    {
+                        d = new SCAN();
+                        OS = new OperatinSystem(d);
+                        timer1.Start();
+                    }
+                }
+            }
+
+            }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (int i in d.)
+            num = OS.performDiskSchedule();
+            foreach (int i in num)
             {
                 listBox1.Items.Add(i);
             }
