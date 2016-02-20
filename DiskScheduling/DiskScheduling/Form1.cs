@@ -15,6 +15,9 @@ namespace DiskScheduling
 
         OperatinSystem OS;
         DiskSchedule d;
+        bool doneSignal = false;
+        int currentValue;
+        List<int> myList = new List<int>();
 
         int[] num = new int[100];
         public Form1()
@@ -41,18 +44,43 @@ namespace DiskScheduling
                 d = new FIFO();
                 OS = new OperatinSystem(d);
                 timer1.Start();
+                listBox1.Items.Clear();
+                num = OS.performDiskSchedule();
+                foreach (int i in num)
+                {
+                    listBox1.Items.Add(i);
+                    myList.Add(i);
+
+                }
             }
             else { if (radioButton2.Checked)
                 {
                     d = new ShortestSeekTime();
                     OS = new OperatinSystem(d);
                     timer1.Start();
+                    listBox1.Items.Clear();
+                    num = OS.performDiskSchedule();
+                    foreach (int i in num)
+                    {
+                        listBox1.Items.Add(i);
+                        myList.Add(i);
+
+                    }
                 }
                 else {  if (radioButton3.Checked)
                     {
                         d = new SCAN();
                         OS = new OperatinSystem(d);
                         timer1.Start();
+                        listBox1.Items.Clear();
+                        num = OS.performDiskSchedule();
+                        foreach (int i in num)
+                        {
+                            listBox1.Items.Add(i);
+                            myList.Add(i);
+
+
+                        }
                     }
                 }
             }
@@ -61,12 +89,45 @@ namespace DiskScheduling
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            num = OS.performDiskSchedule();
-            foreach (int i in num)
+
+            if (doneSignal == false)
             {
-                listBox1.Items.Add(i);
+             
+
+                if (currentValue == trackBar1.Value)
+                {
+                    doneSignal = true;
+                }
+                else if(currentValue != trackBar1.Value)
+                {
+                    if (currentValue < trackBar1.Value)
+                    {
+                        trackBar1.Value--;
+                    }
+                    else if (currentValue > trackBar1.Value)
+                    {
+                        trackBar1.Value++;
+                    }
+                }
+
+
+
             }
+            else if(doneSignal == true)
+            {
+                currentValue = myList.ElementAt(0);
+                myList.Remove(currentValue);
+                listBox1.Items.Remove(currentValue);
+                doneSignal = false;
+                textBox1.Text = currentValue.ToString();
+            }
+            
+            
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
