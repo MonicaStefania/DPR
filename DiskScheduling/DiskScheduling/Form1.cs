@@ -12,8 +12,10 @@ namespace DiskScheduling
 {
     public partial class Form1 : Form
     {
+
         OperatinSystem OS;
-        DiskSchedule d = new FIFO();
+        DiskSchedule d;
+
         //int[] num = new int[100];
         public Form1()
         {
@@ -33,11 +35,23 @@ namespace DiskScheduling
 
         private void button1_Click(object sender, EventArgs e)
         {
-           //num= OS.performDiskSchedule();
-           // foreach (int i in num)
-           // {
-           //     this.listBox1.Items.Add(num[i]);
-           // }
+
+            if (radioButton1.Checked)
+            {
+                //d = new FIFO();
+                d = new SCAN();
+                timer1.Start();
+            }
+        
+                  }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            foreach (int i in d.)
+            {
+                listBox1.Items.Add(i);
+            }
         }
     }
 }

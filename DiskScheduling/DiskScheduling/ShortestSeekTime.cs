@@ -8,7 +8,7 @@ namespace DiskScheduling
 {
     class ShortestSeekTime:DiskSchedule
     {
-        int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
+        public int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
         public int[] Schedule()
         {
             int a = numbers[0];

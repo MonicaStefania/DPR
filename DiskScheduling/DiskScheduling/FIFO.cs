@@ -8,7 +8,7 @@ namespace DiskScheduling
 {
     class FIFO:DiskSchedule
     {
-        int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
+        public int[] numbers = new int[] { 24, 45, 3, 47, 100, 6, 2, 13, 10, 11, 12, 47, 48, 28, 50, 10, 62 };
 
         public int[] Schedule()
         {
@@ -18,7 +18,7 @@ namespace DiskScheduling
 
                 numbers[i] = numbers[i++];
             }
-            numbers[numbers.Length] = a;
+            numbers[numbers.Length - 1] = a; //fixed
             return numbers;
         }
     }
