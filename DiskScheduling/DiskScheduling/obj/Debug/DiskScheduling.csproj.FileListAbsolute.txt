@@ -17,3 +17,6 @@ D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\Di
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.pdb
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.exe
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.pdb
+D:\FONTYS\DPR\DPR\DPR\DiskScheduling\DiskScheduling\bin\Debug\DiskScheduling.exe.config
+D:\FONTYS\DPR\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.exe
+D:\FONTYS\DPR\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.pdb

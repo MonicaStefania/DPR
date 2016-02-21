@@ -41,7 +41,8 @@ namespace DiskScheduling
 
          timer1.Start();
                         listBox1.Items.Clear();
-                        num = OS.performDiskSchedule();
+            myList.Clear();
+            num = OS.performDiskSchedule();
 
                         foreach (int i in num)
                         {
@@ -85,6 +86,8 @@ namespace DiskScheduling
                 currentValue = myList.ElementAt(0);
                 myList.Remove(currentValue);
                 listBox1.Items.Remove(currentValue);
+                myList.Add(currentValue);
+                listBox1.Items.Add(currentValue);
                 doneSignal = false;
                 textBox1.Text = currentValue.ToString();
                 this.lblCurrentNumber.Text = currentValue.ToString();
@@ -106,6 +109,8 @@ namespace DiskScheduling
             timer1.Stop();
             this.listBox1.Items.Clear();
             this.textBox1.Clear();
+            d = null;
+            OS = null;
         }
 
         private void rbFIFO_CheckedChanged(object sender, EventArgs e)
