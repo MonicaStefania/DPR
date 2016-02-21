@@ -23,7 +23,7 @@ namespace DiskScheduling
         public Form1()
         {
             InitializeComponent();
-            radioButton1.Checked = true;
+            rbFIFO.Checked = true;
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace DiskScheduling
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRun_Click(object sender, EventArgs e)
         {
 
          timer1.Start();
@@ -86,6 +86,10 @@ namespace DiskScheduling
                 listBox1.Items.Remove(currentValue);
                 doneSignal = false;
                 textBox1.Text = currentValue.ToString();
+                this.lblCurrentNumber.Text = currentValue.ToString();
+                Point x = trackBar1.Location;
+                
+                this.lblCurrentNumber.Location = new Point(x.X+40,-x.Y+currentValue);
             }
             
             
@@ -96,44 +100,44 @@ namespace DiskScheduling
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnStop_Click(object sender, EventArgs e)
         {
             timer1.Stop();
             this.listBox1.Items.Clear();
             this.textBox1.Clear();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void rbFIFO_CheckedChanged(object sender, EventArgs e)
         {
-            radioButton2.Checked = false;
-            radioButton3.Checked = false;
-            button2.PerformClick();
+            rbSST.Checked = false;
+            rbSCAN.Checked = false;
+            btnStop.PerformClick();
             d = new FIFO();
             OS = new OperatinSystem(d);
-            button1.PerformClick();
+            btnRun.PerformClick();
            
            
             
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void rbSST_CheckedChanged(object sender, EventArgs e)
         {
-            radioButton1.Checked = false;
-            radioButton3.Checked = false;
-            button2.PerformClick();
+            rbFIFO.Checked = false;
+            rbSCAN.Checked = false;
+            btnStop.PerformClick();
             d = new ShortestSeekTime();
             OS = new OperatinSystem(d);
-            button1.PerformClick();
+            btnRun.PerformClick();
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void rbSCAN_CheckedChanged(object sender, EventArgs e)
         {
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            button2.PerformClick();
+            rbFIFO.Checked = false;
+            rbSST.Checked = false;
+            btnStop.PerformClick();
             d = new SCAN();
             OS = new OperatinSystem(d);
-            button1.PerformClick();
+            btnRun.PerformClick();
 
         }
     }

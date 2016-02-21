@@ -16,13 +16,6 @@ namespace DiskScheduling
             sorted=numbers.ToList();
              sorted.Sort();
             return sorted.ToArray();
-            
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    sorted.Add(numbers.Min());
-            //    numbers = numbers.Except(new int[] { numbers.Min() }).ToArray();
-            //}
-            //return sorted.ToArray();
         }
     }
     

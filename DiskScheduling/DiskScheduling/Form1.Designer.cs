@@ -44,33 +44,24 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblCurrentNumber = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbFIFO = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbSST = new System.Windows.Forms.RadioButton();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rbSCAN = new System.Windows.Forms.RadioButton();
             this.label30 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnRun = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -216,130 +207,31 @@
             this.panel1.Size = new System.Drawing.Size(149, 331);
             this.panel1.TabIndex = 14;
             // 
-            // label12
+            // lblCurrentNumber
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(90, 33);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 13);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "currentnumber";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(81, 66);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 13);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "currentnumber";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(81, 90);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "currentnumber";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(81, 169);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 13);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "currentnumber";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(81, 145);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(67, 13);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "currentnumber";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(81, 118);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 13);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "currentnumber";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(81, 250);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 13);
-            this.label18.TabIndex = 23;
-            this.label18.Text = "currentnumber";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(81, 224);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(67, 13);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "currentnumber";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(81, 192);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 13);
-            this.label20.TabIndex = 21;
-            this.label20.Text = "currentnumber";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Bell MT", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(81, 278);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(67, 13);
-            this.label21.TabIndex = 24;
-            this.label21.Text = "currentnumber";
+            this.lblCurrentNumber.AutoSize = true;
+            this.lblCurrentNumber.Font = new System.Drawing.Font("Bell MT", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentNumber.Location = new System.Drawing.Point(83, 241);
+            this.lblCurrentNumber.Name = "lblCurrentNumber";
+            this.lblCurrentNumber.Size = new System.Drawing.Size(121, 23);
+            this.lblCurrentNumber.TabIndex = 24;
+            this.lblCurrentNumber.Text = "currentnumber";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.lblCurrentNumber);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.trackBar1);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(1, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(157, 332);
@@ -348,7 +240,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.rbFIFO);
             this.panel3.Controls.Add(this.label24);
             this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.label22);
@@ -358,17 +250,17 @@
             this.panel3.Size = new System.Drawing.Size(258, 85);
             this.panel3.TabIndex = 26;
             // 
-            // radioButton1
+            // rbFIFO
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 9);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(118, 19);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "First In First Served";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rbFIFO.AutoSize = true;
+            this.rbFIFO.Location = new System.Drawing.Point(13, 9);
+            this.rbFIFO.Name = "rbFIFO";
+            this.rbFIFO.Size = new System.Drawing.Size(118, 19);
+            this.rbFIFO.TabIndex = 4;
+            this.rbFIFO.TabStop = true;
+            this.rbFIFO.Text = "First In First Served";
+            this.rbFIFO.UseVisualStyleBackColor = true;
+            this.rbFIFO.CheckedChanged += new System.EventHandler(this.rbFIFO_CheckedChanged);
             // 
             // label24
             // 
@@ -399,7 +291,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.radioButton2);
+            this.panel4.Controls.Add(this.rbSST);
             this.panel4.Controls.Add(this.label25);
             this.panel4.Controls.Add(this.label26);
             this.panel4.Controls.Add(this.label27);
@@ -409,17 +301,17 @@
             this.panel4.Size = new System.Drawing.Size(258, 85);
             this.panel4.TabIndex = 27;
             // 
-            // radioButton2
+            // rbSST
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(13, 10);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(141, 19);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Shortest Seek Time First";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.rbSST.AutoSize = true;
+            this.rbSST.Location = new System.Drawing.Point(13, 10);
+            this.rbSST.Name = "rbSST";
+            this.rbSST.Size = new System.Drawing.Size(141, 19);
+            this.rbSST.TabIndex = 4;
+            this.rbSST.TabStop = true;
+            this.rbSST.Text = "Shortest Seek Time First";
+            this.rbSST.UseVisualStyleBackColor = true;
+            this.rbSST.CheckedChanged += new System.EventHandler(this.rbSST_CheckedChanged);
             // 
             // label25
             // 
@@ -451,7 +343,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.radioButton3);
+            this.panel5.Controls.Add(this.rbSCAN);
             this.panel5.Controls.Add(this.label30);
             this.panel5.Font = new System.Drawing.Font("Franklin Gothic Book", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(345, 248);
@@ -459,17 +351,17 @@
             this.panel5.Size = new System.Drawing.Size(258, 85);
             this.panel5.TabIndex = 28;
             // 
-            // radioButton3
+            // rbSCAN
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(13, 10);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(119, 19);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Scan Disk Schedule";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.rbSCAN.AutoSize = true;
+            this.rbSCAN.Location = new System.Drawing.Point(13, 10);
+            this.rbSCAN.Name = "rbSCAN";
+            this.rbSCAN.Size = new System.Drawing.Size(119, 19);
+            this.rbSCAN.TabIndex = 2;
+            this.rbSCAN.TabStop = true;
+            this.rbSCAN.Text = "Scan Disk Schedule";
+            this.rbSCAN.UseVisualStyleBackColor = true;
+            this.rbSCAN.CheckedChanged += new System.EventHandler(this.rbSCAN_CheckedChanged);
             // 
             // label30
             // 
@@ -490,25 +382,25 @@
             this.label28.TabIndex = 29;
             this.label28.Text = "Choose strategy:";
             // 
-            // button2
+            // btnStop
             // 
-            this.button2.Image = global::DiskScheduling.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_media_playback_stop;
-            this.button2.Location = new System.Drawing.Point(623, 214);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 54);
-            this.button2.TabIndex = 31;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStop.Image = global::DiskScheduling.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_media_playback_stop;
+            this.btnStop.Location = new System.Drawing.Point(623, 214);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(58, 54);
+            this.btnStop.TabIndex = 31;
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
-            // button1
+            // btnRun
             // 
-            this.button1.Image = global::DiskScheduling.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_media_playback_start;
-            this.button1.Location = new System.Drawing.Point(623, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 54);
-            this.button1.TabIndex = 30;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRun.Image = global::DiskScheduling.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_media_playback_start;
+            this.btnRun.Location = new System.Drawing.Point(623, 125);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(58, 54);
+            this.btnRun.TabIndex = 30;
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // label29
             // 
@@ -541,8 +433,8 @@
             this.ClientSize = new System.Drawing.Size(705, 393);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label29);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnRun);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -586,16 +478,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblCurrentNumber;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label24;
@@ -608,14 +491,14 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbFIFO;
+        private System.Windows.Forms.RadioButton rbSST;
+        private System.Windows.Forms.RadioButton rbSCAN;
     }
 }
 
