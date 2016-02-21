@@ -42,6 +42,7 @@ namespace DiskScheduling
          timer1.Start();
                         listBox1.Items.Clear();
                         num = OS.performDiskSchedule();
+
                         foreach (int i in num)
                         {
                             listBox1.Items.Add(i);
