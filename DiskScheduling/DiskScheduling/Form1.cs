@@ -14,7 +14,6 @@ namespace DiskScheduling
     {
 
         OperatingSystem OS;
-        IDiskSchedule d;
         bool doneSignal = false;
         int currentValue;
         List<int> myList = new List<int>();
@@ -22,7 +21,9 @@ namespace DiskScheduling
         public Form1()
         {
             InitializeComponent();
+            OS = new OperatingSystem();
             rbFIFO.Checked = true;
+           
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -69,7 +70,7 @@ namespace DiskScheduling
                 listBox1.Items.Add(currentValue);
                 doneSignal = false;
                 textBox1.Text = currentValue.ToString();
-                this.lblCurrentNumber.Text = currentValue.ToString();   
+                   
             }
         }
 
@@ -78,8 +79,8 @@ namespace DiskScheduling
             timer1.Stop();
             this.listBox1.Items.Clear();
             this.textBox1.Clear();
-            d = null;
-            OS = null;
+            OS.dkSchedule = null;
+            
             this.trackBar1.Value = 0;
         }
 
@@ -88,8 +89,8 @@ namespace DiskScheduling
             rbSST.Checked = false;
             rbSCAN.Checked = false;
             btnStop.PerformClick();
-            d = new FIFO();
-            OS = new OperatingSystem(d);
+            
+            OS.dkSchedule = new FIFO();
             btnRun.PerformClick();
         }
 
@@ -98,8 +99,8 @@ namespace DiskScheduling
             rbFIFO.Checked = false;
             rbSCAN.Checked = false;
             btnStop.PerformClick();
-            d = new ShortestSeekTime();
-            OS = new OperatingSystem(d);
+            OS.dkSchedule = new ShortestSeekTime();
+            
             btnRun.PerformClick();
         }
 
@@ -108,9 +109,13 @@ namespace DiskScheduling
             rbFIFO.Checked = false;
             rbSST.Checked = false;
             btnStop.PerformClick();
-            d = new SCAN();
-            OS = new OperatingSystem(d);
+            OS.dkSchedule = new SCAN();
             btnRun.PerformClick();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

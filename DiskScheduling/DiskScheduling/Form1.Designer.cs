@@ -44,7 +44,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblCurrentNumber = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rbFIFO = new System.Windows.Forms.RadioButton();
@@ -101,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 288);
+            this.label1.Location = new System.Drawing.Point(26, 288);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 3;
@@ -110,7 +110,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 268);
+            this.label2.Location = new System.Drawing.Point(22, 261);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 4;
@@ -200,6 +200,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Location = new System.Drawing.Point(164, 13);
@@ -207,19 +208,18 @@
             this.panel1.Size = new System.Drawing.Size(149, 331);
             this.panel1.TabIndex = 14;
             // 
-            // lblCurrentNumber
+            // label12
             // 
-            this.lblCurrentNumber.AutoSize = true;
-            this.lblCurrentNumber.Font = new System.Drawing.Font("Bell MT", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentNumber.Location = new System.Drawing.Point(72, 134);
-            this.lblCurrentNumber.Name = "lblCurrentNumber";
-            this.lblCurrentNumber.Size = new System.Drawing.Size(121, 23);
-            this.lblCurrentNumber.TabIndex = 24;
-            this.lblCurrentNumber.Text = "currentnumber";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(23, 5);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(111, 17);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "current number:";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.lblCurrentNumber);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.trackBar1);
             this.panel2.Controls.Add(this.label8);
@@ -441,7 +441,8 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Disk Scheduling";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -475,7 +476,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblCurrentNumber;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label24;
@@ -496,6 +496,7 @@
         private System.Windows.Forms.RadioButton rbFIFO;
         private System.Windows.Forms.RadioButton rbSST;
         private System.Windows.Forms.RadioButton rbSCAN;
+        private System.Windows.Forms.Label label12;
     }
 }
 

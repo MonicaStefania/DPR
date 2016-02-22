@@ -8,18 +8,16 @@ namespace DiskScheduling
 {
     class OperatingSystem
     {
-        IDiskSchedule dk;
+        public IDiskSchedule dkSchedule { get; set; }
 
-        public OperatingSystem(IDiskSchedule d)
-        {
-            dk = d;
-        }
+        
+
 
         public int[] performDiskSchedule
         {
             get
             {
-                return dk.Schedule();
+                return dkSchedule.Schedule();
             } 
         }
 
