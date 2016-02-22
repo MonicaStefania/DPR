@@ -32,7 +32,7 @@ namespace DiskScheduling
             listBox1.Items.Clear();
             myList.Clear();
             num = OS.performDiskSchedule;
- 
+ //24,28,16,13,12,11,10,
             foreach (int i in num)
             {
                 listBox1.Items.Add(i);

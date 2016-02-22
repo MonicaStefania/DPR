@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiskScheduling
 {
-    class FIFO:IDiskSchedule
+    public class FIFO:IDiskSchedule
     {
         public int[] numbers = new int[] { 24, 45, 3, 49, 100, 6, 2, 13, 16, 11, 12, 47, 48, 28, 50, 10, 62 };
 
@@ -17,8 +17,9 @@ namespace DiskScheduling
             {
                 numbers[i] = numbers[i++];
             }
-            numbers[numbers.Length - 1] = a; 
+          //  numbers[numbers.Length - 1] = a; 
             return numbers;
         }
     }
 }
+// 62
