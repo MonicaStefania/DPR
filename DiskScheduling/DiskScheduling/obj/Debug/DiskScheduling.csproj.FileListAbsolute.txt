@@ -8,7 +8,6 @@ D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.Propert
 D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.csproj.GenerateResource.Cache
 D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.exe
 D:\FONTYS\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.pdb
-D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.csprojResolveAssemblyReference.cache
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.Form1.resources
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.Properties.Resources.resources
 D:\Documents\2015-2016\Block7\DPR\DPR\DiskScheduling\DiskScheduling\obj\Debug\DiskScheduling.csproj.GenerateResource.Cache

@@ -13,12 +13,11 @@ namespace DiskScheduling
     public partial class Form1 : Form
     {
 
-        OperatinSystem OS;
-        DiskSchedule d;
+        OperatingSystem OS;
+        IDiskSchedule d;
         bool doneSignal = false;
         int currentValue;
         List<int> myList = new List<int>();
-       
         int[] num = new int[100];
         public Form1()
         {
@@ -26,42 +25,25 @@ namespace DiskScheduling
             rbFIFO.Checked = true;
         }
 
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRun_Click(object sender, EventArgs e)
         {
-
-         timer1.Start();
-                        listBox1.Items.Clear();
+            timer1.Start();
+            listBox1.Items.Clear();
             myList.Clear();
-            num = OS.performDiskSchedule();
+            num = OS.performDiskSchedule;
+ 
+            foreach (int i in num)
+            {
+                listBox1.Items.Add(i);
 
-                        foreach (int i in num)
-                        {
-                            listBox1.Items.Add(i);
-                            myList.Add(i);
-
-
-                        }
-                    
-                
+                myList.Add(i);
             }
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             if (doneSignal == false)
             {
-             
-
                 if (currentValue == trackBar1.Value)
                 {
                     doneSignal = true;
@@ -77,9 +59,6 @@ namespace DiskScheduling
                         trackBar1.Value++;
                     }
                 }
-
-
-
             }
             else if(doneSignal == true)
             {
@@ -90,18 +69,8 @@ namespace DiskScheduling
                 listBox1.Items.Add(currentValue);
                 doneSignal = false;
                 textBox1.Text = currentValue.ToString();
-                this.lblCurrentNumber.Text = currentValue.ToString();
-                Point x = trackBar1.Location;
-                
-                this.lblCurrentNumber.Location = new Point(x.X+40,-x.Y+currentValue);
+                this.lblCurrentNumber.Text = currentValue.ToString();   
             }
-            
-            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -111,6 +80,7 @@ namespace DiskScheduling
             this.textBox1.Clear();
             d = null;
             OS = null;
+            this.trackBar1.Value = 0;
         }
 
         private void rbFIFO_CheckedChanged(object sender, EventArgs e)
@@ -119,11 +89,8 @@ namespace DiskScheduling
             rbSCAN.Checked = false;
             btnStop.PerformClick();
             d = new FIFO();
-            OS = new OperatinSystem(d);
+            OS = new OperatingSystem(d);
             btnRun.PerformClick();
-           
-           
-            
         }
 
         private void rbSST_CheckedChanged(object sender, EventArgs e)
@@ -132,7 +99,7 @@ namespace DiskScheduling
             rbSCAN.Checked = false;
             btnStop.PerformClick();
             d = new ShortestSeekTime();
-            OS = new OperatinSystem(d);
+            OS = new OperatingSystem(d);
             btnRun.PerformClick();
         }
 
@@ -142,9 +109,8 @@ namespace DiskScheduling
             rbSST.Checked = false;
             btnStop.PerformClick();
             d = new SCAN();
-            OS = new OperatinSystem(d);
+            OS = new OperatingSystem(d);
             btnRun.PerformClick();
-
         }
     }
 }

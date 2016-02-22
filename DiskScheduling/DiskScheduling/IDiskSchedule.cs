@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiskScheduling
 {
-    public interface DiskSchedule
+    public interface IDiskSchedule
     {
         int[] Schedule();
     }

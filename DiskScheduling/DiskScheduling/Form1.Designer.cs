@@ -211,7 +211,7 @@
             // 
             this.lblCurrentNumber.AutoSize = true;
             this.lblCurrentNumber.Font = new System.Drawing.Font("Bell MT", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentNumber.Location = new System.Drawing.Point(83, 241);
+            this.lblCurrentNumber.Location = new System.Drawing.Point(72, 134);
             this.lblCurrentNumber.Name = "lblCurrentNumber";
             this.lblCurrentNumber.Size = new System.Drawing.Size(121, 23);
             this.lblCurrentNumber.TabIndex = 24;
@@ -236,7 +236,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(157, 332);
             this.panel2.TabIndex = 25;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -330,7 +329,6 @@
             this.label26.Size = new System.Drawing.Size(244, 15);
             this.label26.TabIndex = 2;
             this.label26.Text = "algorithm moves the heads the minimum amount ";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // label27
             // 
@@ -444,7 +442,6 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
