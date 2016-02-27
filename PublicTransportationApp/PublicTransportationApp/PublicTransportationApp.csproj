@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addForm.Designer.cs">
+      <DependentUpon>addForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bus.cs" />
     <Compile Include="Traffic.cs" />
     <Compile Include="Form1.cs">
@@ -61,6 +67,9 @@
     <Compile Include="TrafficMonitor.cs" />
     <Compile Include="Train.cs" />
     <Compile Include="Tram.cs" />
+    <EmbeddedResource Include="addForm.resx">
+      <DependentUpon>addForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,6 +95,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-General-1-Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0153_delete_exit_remove_close-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-General-1-Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mini-Accept.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Train-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-One-Color-Train.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Transport-Bus-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Tram.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-General-1-Information.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
