@@ -11,8 +11,9 @@ namespace PublicTransportationApp
         List<IPublicTransportation> subjects=new List<IPublicTransportation>();
         public Traffic(IPublicTransportation s)
         {
-            subjects.Add(s);
             s.Attach(this);
+            subjects.Add(s);
+           
         }
         public void Update()
         {

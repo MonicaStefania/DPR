@@ -19,7 +19,7 @@ namespace PublicTransportationApp
         List<Train> myTrain;
         List<Bus> myBus;
         List<Tram> myTram;
-
+        Traffic T;
         public Form1()
         {
             InitializeComponent();
@@ -27,9 +27,19 @@ namespace PublicTransportationApp
             myTrain = new List<Train>();
             myBus = new List<Bus>();
             myTram = new List<Tram>();
-            initTrain = new Train("Eindhoven", "Utrecht", 12, 31, 2, true);
-            initBus = new Bus("Eindhoven", "Prague", 17, 45, 0, false);
-            initTram = new Tram("Best", "Neuen", 14, 22, 3, true);
+
+            initTrain = new Train("Eindhoven", "Utrecht", 12, 31, 2);
+            T = new Traffic(initTrain);
+            myTrain.Add(initTrain);
+            //this is how it has to look everytime u add an element.
+            initBus =new Bus("Eindhoven", "Prague", 17, 45, 0);
+            T = new Traffic(initBus);
+            myBus.Add(initBus);
+            
+            initTram =new Tram("Best", "Neuen", 14, 22, 3);
+            T = new Traffic(initTram);
+            myBus.Add(initBus);
+           
 
             trainDestinationlbox.Items.Add(initTrain.From + " --> " + initTrain.To);
             trainTimelbox.Items.Add(initTrain.Hour + " : " + initTrain.Minutes);
@@ -46,9 +56,9 @@ namespace PublicTransportationApp
             tramDelaylbox.Items.Add(initTram.Delay);
             myTram.Add(initTram);
 
-            showTrain.Checked = true;
-            showBus.Checked = true;
-            showTram.Checked = true;
+            cbBus.Checked = true;
+            cbTrain.Checked = true;
+            cbTram.Checked = true;
         }
         public void AddTransportation(IPublicTransportation myTransport)
         {
@@ -58,13 +68,16 @@ namespace PublicTransportationApp
                 trainTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
                 trainDelaylbox.Items.Add(myTransport.Delay);
                 myTrain.Add(myTransport as Train);
+                
+                //T = new Traffic(myTransport as Train);
+
             }
             if(myTransport is Bus)
             {
                 busDestinationlbox.Items.Add(myTransport.From + " --> " + myTransport.To);
                 busTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
                 busDelaylbox.Items.Add(myTransport.Delay);
-                myBus.Add(myTransport as Bus);
+               // myBus.Add(myTransport as Bus);
 
 
             }
@@ -73,8 +86,9 @@ namespace PublicTransportationApp
                 tramDestinationlbox.Items.Add(myTransport.From + " --> " + myTransport.To);
                 tramTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
                 tramDelaylbox.Items.Add(myTransport.Delay);
-                myTram.Add(myTransport as Tram);
+               // myTram.Add(myTransport as Tram);
             }
+           
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -174,5 +188,54 @@ namespace PublicTransportationApp
 
             }
         }
+
+        private void btnSubscribe_Click(object sender, EventArgs e)
+        {
+            if (cbBus.Checked)
+            {
+                //clear listbox add items to listobx
+                foreach (Bus b in myBus)
+                {
+                    initBus.AddBus(b);
+                }
+            }
+            else
+            {
+            //clear listbox
+                foreach (Bus b in myBus)
+                {
+                    initBus.RemoveBus(b);
+                }
+            }
+            if (cbTrain.Checked)
+            {
+                foreach (Train t in myTrain)
+                {
+                    initTrain.AddTrain(t);
+                }
+            }
+            else
+            {
+                foreach (Train t in myTrain)
+                {
+                    initTrain.RemoveTrain(t);
+                }
+            }
+            if (cbTram.Checked)
+            {
+                foreach(Tram t in myTram)
+                {
+                    initTram.AddTram(t);
+                }
+            }
+            else
+            {
+                foreach (Tram t in myTram)
+                {
+                    initTram.RemoveTram(t);
+                }
+            }
+        }
+        }
     }
-}
+

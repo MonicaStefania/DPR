@@ -64,10 +64,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.showTram = new System.Windows.Forms.RadioButton();
-            this.showBus = new System.Windows.Forms.RadioButton();
-            this.showTrain = new System.Windows.Forms.RadioButton();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbTrain = new System.Windows.Forms.CheckBox();
+            this.cbBus = new System.Windows.Forms.CheckBox();
+            this.cbTram = new System.Windows.Forms.CheckBox();
+            this.btnSubscribe = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -432,53 +433,61 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // showTram
-            // 
-            this.showTram.AutoSize = true;
-            this.showTram.Location = new System.Drawing.Point(59, 108);
-            this.showTram.Name = "showTram";
-            this.showTram.Size = new System.Drawing.Size(49, 17);
-            this.showTram.TabIndex = 11;
-            this.showTram.TabStop = true;
-            this.showTram.Text = "Tram";
-            this.showTram.UseVisualStyleBackColor = true;
-            // 
-            // showBus
-            // 
-            this.showBus.AutoSize = true;
-            this.showBus.Location = new System.Drawing.Point(59, 68);
-            this.showBus.Name = "showBus";
-            this.showBus.Size = new System.Drawing.Size(43, 17);
-            this.showBus.TabIndex = 10;
-            this.showBus.TabStop = true;
-            this.showBus.Text = "Bus";
-            this.showBus.UseVisualStyleBackColor = true;
-            // 
-            // showTrain
-            // 
-            this.showTrain.AutoSize = true;
-            this.showTrain.Location = new System.Drawing.Point(59, 30);
-            this.showTrain.Name = "showTrain";
-            this.showTrain.Size = new System.Drawing.Size(49, 17);
-            this.showTrain.TabIndex = 9;
-            this.showTrain.TabStop = true;
-            this.showTrain.Text = "Train";
-            this.showTrain.UseVisualStyleBackColor = true;
-            // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.btnSubscribe);
+            this.groupBox7.Controls.Add(this.cbTram);
+            this.groupBox7.Controls.Add(this.cbBus);
+            this.groupBox7.Controls.Add(this.cbTrain);
             this.groupBox7.Controls.Add(this.pictureBox1);
-            this.groupBox7.Controls.Add(this.showTram);
             this.groupBox7.Controls.Add(this.pictureBox3);
-            this.groupBox7.Controls.Add(this.showTrain);
             this.groupBox7.Controls.Add(this.pictureBox2);
-            this.groupBox7.Controls.Add(this.showBus);
             this.groupBox7.Location = new System.Drawing.Point(549, 322);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(200, 149);
             this.groupBox7.TabIndex = 15;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Show:";
+            // 
+            // cbTrain
+            // 
+            this.cbTrain.AutoSize = true;
+            this.cbTrain.Location = new System.Drawing.Point(64, 31);
+            this.cbTrain.Name = "cbTrain";
+            this.cbTrain.Size = new System.Drawing.Size(50, 17);
+            this.cbTrain.TabIndex = 15;
+            this.cbTrain.Text = "Train";
+            this.cbTrain.UseVisualStyleBackColor = true;
+            // 
+            // cbBus
+            // 
+            this.cbBus.AutoSize = true;
+            this.cbBus.Location = new System.Drawing.Point(64, 76);
+            this.cbBus.Name = "cbBus";
+            this.cbBus.Size = new System.Drawing.Size(44, 17);
+            this.cbBus.TabIndex = 16;
+            this.cbBus.Text = "Bus";
+            this.cbBus.UseVisualStyleBackColor = true;
+            // 
+            // cbTram
+            // 
+            this.cbTram.AutoSize = true;
+            this.cbTram.Location = new System.Drawing.Point(67, 116);
+            this.cbTram.Name = "cbTram";
+            this.cbTram.Size = new System.Drawing.Size(50, 17);
+            this.cbTram.TabIndex = 17;
+            this.cbTram.Text = "Tram";
+            this.cbTram.UseVisualStyleBackColor = true;
+            // 
+            // btnSubscribe
+            // 
+            this.btnSubscribe.Location = new System.Drawing.Point(125, 70);
+            this.btnSubscribe.Name = "btnSubscribe";
+            this.btnSubscribe.Size = new System.Drawing.Size(75, 23);
+            this.btnSubscribe.TabIndex = 4;
+            this.btnSubscribe.Text = "Subscribe";
+            this.btnSubscribe.UseVisualStyleBackColor = true;
+            this.btnSubscribe.Click += new System.EventHandler(this.btnSubscribe_Click);
             // 
             // Form1
             // 
@@ -554,10 +563,11 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton showTram;
-        private System.Windows.Forms.RadioButton showBus;
-        private System.Windows.Forms.RadioButton showTrain;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button btnSubscribe;
+        private System.Windows.Forms.CheckBox cbTram;
+        private System.Windows.Forms.CheckBox cbBus;
+        private System.Windows.Forms.CheckBox cbTrain;
     }
 }
 

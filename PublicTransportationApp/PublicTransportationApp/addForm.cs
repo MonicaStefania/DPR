@@ -29,17 +29,17 @@ namespace PublicTransportationApp
             IPublicTransportation myTransport;
             if (trainRadioButton.Checked)
             {
-                Train ty = new Train(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text), true);
+                Train ty = new Train(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
                 myTransport = ty;
             }
            else if (busRadioButton.Checked)
             {
-                Bus tz = new Bus(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text), true);
+                Bus tz = new Bus(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
                 myTransport = tz;
             }
             else 
             {
-                Tram ta = new Tram(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text), true);
+                Tram ta = new Tram(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
                 myTransport = ta;
             }
             myForm.AddTransportation(myTransport);

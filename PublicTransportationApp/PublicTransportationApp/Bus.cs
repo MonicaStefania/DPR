@@ -8,29 +8,39 @@ namespace PublicTransportationApp
 {
     class Bus : IPublicTransportation
     {
-        List<Bus> myBuses;
-        List<IObserver> myObservers;
-
-        public Bus(String from, string to, int h, int min, int delay, bool isDeplayed)
+        List<Bus> myBuses=new List<Bus>();
+        List<IObserver> myObservers=new List<IObserver>();
+        public Bus(String from, string to, int h, int min, int delay)
         {
             this.From = from;
             this.To = to;
             this.Hour = h;
             this.Minutes = min;
             this.Delay = delay;
-            this.isDelayed = isDelayed;
+            AddBus(this);
+                    
         }
 
         public int Delay { get; set; }
-        public bool isDelayed { get; set; }
+        public bool isDelayed { get; set ; }
         public string From { get; set; }
         public string To { get; set; }
         public int Hour { get; set; }
         public int Minutes { get; set; }
 
-        public void AddBus(Bus t)
-        {
-            myBuses.Add(t);
+        public void AddBus(Bus B)
+        { 
+            if (B.Delay > 0)
+            {
+                B.isDelayed = true;
+            }
+            else
+            {
+                B.isDelayed = false;
+            }
+           
+
+            myBuses.Add(B);
             Notify();
 
         }
@@ -43,6 +53,7 @@ namespace PublicTransportationApp
         {
             b.isDelayed = true;
             b.Delay = delay;
+            Notify();
         }
         public string toString()
         {

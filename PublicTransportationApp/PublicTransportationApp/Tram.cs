@@ -8,17 +8,17 @@ namespace PublicTransportationApp
 {
     class Tram : IPublicTransportation
     {
-        List<Tram> myTrams;
+        List<Tram> myTrams=new List<Tram>();
         List<IObserver> myObservers = new List<IObserver>();
 
-        public Tram(String from, string to, int h, int min, int delay, bool isDeplayed)
+        public Tram(String from, string to, int h, int min, int delay)
         {
             this.From = from;
             this.To = to;
             this.Hour = h;
             this.Minutes = min;
             this.Delay = delay;
-            this.isDelayed = isDelayed;
+            AddTram(this);
         }
 
         public int Delay { get; set; }
@@ -28,9 +28,18 @@ namespace PublicTransportationApp
         public int Hour { get; set; }
         public int Minutes { get; set; }
 
-        public void AddTram(Tram t)
+        public void AddTram(Tram T)
         {
-            myTrams.Add(t);
+           
+            if (T.Delay > 0)
+            {
+                T.isDelayed = true;
+            }
+            else
+            {
+                T.isDelayed = false;
+            }
+            myTrams.Add(T);
             Notify();
 
         }
@@ -43,6 +52,7 @@ namespace PublicTransportationApp
         {
             t.isDelayed = true;
             t.Delay = delay;
+            Notify();
         }
         public string toString()
         {
