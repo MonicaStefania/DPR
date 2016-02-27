@@ -8,15 +8,15 @@ namespace PublicTransportationApp
 {
    public interface IPublicTransportation
     {
-         void Attach(IPublicTransportation obj);
-         void Detach(IPublicTransportation obj);
-        void Notify(IPublicTransportation obj);
+        void Attach(IObserver o);
+        void Detach(IObserver o);
+        void Notify();
         bool isDelayed { get; set; }
         string From { get; set; }
         string To { get; set; }
         int Hour { get; set; }
         int Minutes { get; set; }
-         int Delay { get; set; }
-        string State(IPublicTransportation obj);
+        int Delay { get; set; }
+        bool State();
     }
 }

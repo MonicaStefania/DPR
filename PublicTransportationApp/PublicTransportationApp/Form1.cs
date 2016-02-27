@@ -12,9 +12,18 @@ namespace PublicTransportationApp
 {
     public partial class Form1 : Form
     {
+        TrafficMonitor tr;
+        
+
         public Form1()
         {
             InitializeComponent();
+            tr = new TrafficMonitor();
+             
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

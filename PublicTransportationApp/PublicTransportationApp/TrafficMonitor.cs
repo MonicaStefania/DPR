@@ -8,7 +8,8 @@ namespace PublicTransportationApp
 {
     class TrafficMonitor
     {
-        PublicTransportation pb { get; set; }
-
+       public IPublicTransportation pb { get; set; }
+       public IObserver observe { get; set; }
+  
     }
 }

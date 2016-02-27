@@ -8,9 +8,18 @@ namespace PublicTransportationApp
 {
     public class Traffic : IObserver
     {
+        List<IPublicTransportation> subjects=new List<IPublicTransportation>();
+        public Traffic(IPublicTransportation s)
+        {
+            subjects.Add(s);
+            s.Attach(this);
+        }
         public void Update()
         {
-            throw new NotImplementedException();
+            foreach (IPublicTransportation s in subjects)
+            {
+                s.State();
+            }
         }
     }
 }

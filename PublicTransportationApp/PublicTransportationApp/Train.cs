@@ -9,6 +9,7 @@ namespace PublicTransportationApp
     class Train : IPublicTransportation
     {
         List<Train> myTrains;
+        List<IObserver> myObservers = new List<IObserver>();
         
         public Train(String from, string to, int h, int min, int delay, bool isDeplayed)
         {
@@ -21,35 +22,57 @@ namespace PublicTransportationApp
         }
 
         public int Delay { get; set; }
-
         public bool isDelayed { get; set; }
         public string From { get; set; }
         public string To { get; set; }
         public int Hour { get; set; }
         public int Minutes { get; set; }
-      
 
-        public void Attach(PublicTransportation obj)
+        public void AddTrain(Train t)
         {
-            myTrains.Add((Train)obj);
-            Notify(obj);
+            myTrains.Add(t);
+         Notify();
+            
+        }
+        public void RemoveTrain(Train t)
+        {
+            myTrains.Remove(t);
+            Notify();
+        }
+        public void DelayTrain(Train t, int delay)
+        {
+            t.isDelayed = true;
+            t.Delay = delay;
+        }
+        public string toString()
+        {
+            return To + " - " + From + " " + Hour + ":" + Minutes + "Delay: " + Delay;
+        }
+        public void Attach(IObserver o)
+        {
+            myObservers.Add(o);
+        }        
+
+        public void Detach(IObserver o)
+        {
+            myObservers.Remove(o);
+          
         }
 
-        public void Detach(PublicTransportation obj)
+        public void Notify()
         {
-            this.myTrains.Remove((Train)obj);
-        }
-
-        public void Notify(PublicTransportation obj)
-        {
-            if(obj.isDelayed)
+           
+                foreach (IObserver o in myObservers)
             {
-                //do smth
+                o.Update();
             }
+         
         }
-        public string State(PublicTransportation obj)
+        public bool State()
         {
-            return "";
+            return isDelayed;
         }
+
+ 
     }
 }
