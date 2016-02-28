@@ -162,30 +162,43 @@ namespace PublicTransportationApp
                 tramDelaylbox.SelectedIndex = tramDestinationlbox.SelectedIndex;
             }
         }
-
+        
         private void button3_Click(object sender, EventArgs e)
         {
             // TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             if (tramDestinationlbox.SelectedItem != null)
             {
-              
-                
-                
-
+                int index = Convert.ToInt32(tramDestinationlbox.SelectedIndex);
+                int delay = Convert.ToInt32(delayTextbox.Text);
+                Tram tr = myTram.ElementAt(index);
+                tr.DelayTram(tr, delay);
+                tramDelaylbox.Items.RemoveAt(tramDestinationlbox.SelectedIndex);
+                tramDelaylbox.Items.Add(tr.Delay);
 
             }
             if (trainDestinationlbox.SelectedItem != null)
             {
-                trainTimelbox.Items.RemoveAt(trainDestinationlbox.SelectedIndex);
+                int index = Convert.ToInt32(trainDestinationlbox.SelectedIndex);
+                int delay = Convert.ToInt32(delayTextbox.Text);
+                Train t = myTrain.ElementAt(index);
+                t.DelayTrain(t, delay);
                 trainDelaylbox.Items.RemoveAt(trainDestinationlbox.SelectedIndex);
-                trainDestinationlbox.Items.Remove(trainDestinationlbox.SelectedItem);
+                trainDelaylbox.Items.Add(t.Delay);
+
+
             }
             if (busDestinationlbox.SelectedItem != null)
             {
-                busTimelbox.Items.RemoveAt(busDestinationlbox.SelectedIndex);
+                int index = Convert.ToInt32(busDestinationlbox.SelectedIndex);
+                int delay = Convert.ToInt32(delayTextbox.Text);
+                Bus b = myBus.ElementAt(index);
+                b.DelayBus(b, delay);
+                //busDelaylbox.Refresh(); -- I dont know why it does not refresh the delaylistbox, I;ve tried everything 
+                // so I remove and add.
                 busDelaylbox.Items.RemoveAt(busDestinationlbox.SelectedIndex);
-                busDestinationlbox.Items.Remove(busDestinationlbox.SelectedItem);
+                busDelaylbox.Items.Add(b.Delay);
 
+                
             }
         }
 
