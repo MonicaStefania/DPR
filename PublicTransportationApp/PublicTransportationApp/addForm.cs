@@ -23,27 +23,28 @@ namespace PublicTransportationApp
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSend_Click(object sender, EventArgs e)
         {
             IPublicTransportation myTransport;
-            if (trainRadioButton.Checked)
+            if (rbTrain.Checked)
             {
-                Train ty = new Train(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
+                Train ty = new Train(tbFrom.Text, tbTo.Text, Convert.ToInt32(tbHour.Text), Convert.ToInt32(tbMin.Text), Convert.ToInt32(tbDelay.Text));
                 myTransport = ty;
             }
-           else if (busRadioButton.Checked)
+           else if (rbBus.Checked)
             {
-                Bus tz = new Bus(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
+                Bus tz = new Bus(tbFrom.Text, tbTo.Text, Convert.ToInt32(tbHour.Text), Convert.ToInt32(tbMin.Text), Convert.ToInt32(tbDelay.Text));
                 myTransport = tz;
             }
             else 
             {
-                Tram ta = new Tram(fromTextBox.Text, toTextbox.Text, Convert.ToInt32(hourTextbox.Text), Convert.ToInt32(minTextbox.Text), Convert.ToInt32(delayTextbox.Text));
+                Tram ta = new Tram(tbFrom.Text, tbTo.Text, Convert.ToInt32(tbHour.Text), Convert.ToInt32(tbMin.Text), Convert.ToInt32(tbDelay.Text));
                 myTransport = ta;
             }
             myForm.AddTransportation(myTransport);
             this.Close();
         }
+
+    
     }
 }

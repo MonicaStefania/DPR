@@ -27,34 +27,32 @@ namespace PublicTransportationApp
             myTrain = new List<Train>();
             myBus = new List<Bus>();
             myTram = new List<Tram>();
+            timer1.Interval = 20000;
 
             initTrain = new Train("Eindhoven", "Utrecht", 12, 31, 2);
             T = new Traffic(initTrain);
             myTrain.Add(initTrain);
-            //this is how it has to look everytime u add an element.
+
             initBus =new Bus("Eindhoven", "Prague", 17, 45, 0);
             T = new Traffic(initBus);
             myBus.Add(initBus);
             
             initTram =new Tram("Best", "Neuen", 14, 22, 3);
             T = new Traffic(initTram);
-            myBus.Add(initBus);
+            myTram.Add(initTram);
            
 
-            trainDestinationlbox.Items.Add(initTrain.From + " --> " + initTrain.To);
-            trainTimelbox.Items.Add(initTrain.Hour + " : " + initTrain.Minutes);
-            trainDelaylbox.Items.Add(initTrain.Delay);
-            myTrain.Add(initTrain);
+            lbtrainDestination.Items.Add(initTrain.From + " --> " + initTrain.To);
+            lbtrainTime.Items.Add(initTrain.Hour + " : " + initTrain.Minutes);
+            lbtrainDelay.Items.Add(initTrain.Delay);
 
-            busDestinationlbox.Items.Add(initBus.From + " --> " + initBus.To);
-            busTimelbox.Items.Add(initBus.Hour + " : " + initBus.Minutes);
-            busDelaylbox.Items.Add(initBus.Delay);
-            myBus.Add(initBus);
+            lbbusDestination.Items.Add(initBus.From + " --> " + initBus.To);
+            lbbusTime.Items.Add(initBus.Hour + " : " + initBus.Minutes);
+            lbbusDelay.Items.Add(initBus.Delay);
 
-            tramDestinationlbox.Items.Add(initTram.From + " --> " + initTram.To);
-            tramTimelbox.Items.Add(initTram.Hour + " : " + initTram.Minutes);
-            tramDelaylbox.Items.Add(initTram.Delay);
-            myTram.Add(initTram);
+            lbtramDestination.Items.Add(initTram.From + " --> " + initTram.To);
+            lbtramTime.Items.Add(initTram.Hour + " : " + initTram.Minutes);
+            lbtramDelay.Items.Add(initTram.Delay);
 
             cbBus.Checked = true;
             cbTrain.Checked = true;
@@ -64,29 +62,28 @@ namespace PublicTransportationApp
         {
             if (myTransport is Train)
             {
-                trainDestinationlbox.Items.Add(myTransport.From + " --> " + myTransport.To);
-                trainTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
-                trainDelaylbox.Items.Add(myTransport.Delay);
+                lbtrainDestination.Items.Add(myTransport.From + " --> " + myTransport.To);
+                lbtrainTime.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
+                lbtrainDelay.Items.Add(myTransport.Delay);
                 myTrain.Add(myTransport as Train);
                 
-                //T = new Traffic(myTransport as Train);
 
             }
             if(myTransport is Bus)
             {
-                busDestinationlbox.Items.Add(myTransport.From + " --> " + myTransport.To);
-                busTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
-                busDelaylbox.Items.Add(myTransport.Delay);
-               // myBus.Add(myTransport as Bus);
+                lbbusDestination.Items.Add(myTransport.From + " --> " + myTransport.To);
+                lbbusTime.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
+                lbbusDelay.Items.Add(myTransport.Delay);
+                myBus.Add(myTransport as Bus);
 
 
             }
             if (myTransport is Tram)
             {
-                tramDestinationlbox.Items.Add(myTransport.From + " --> " + myTransport.To);
-                tramTimelbox.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
-                tramDelaylbox.Items.Add(myTransport.Delay);
-               // myTram.Add(myTransport as Tram);
+                lbtramDestination.Items.Add(myTransport.From + " --> " + myTransport.To);
+                lbtramTime.Items.Add(myTransport.Hour + " : " + myTransport.Minutes);
+                lbtramDelay.Items.Add(myTransport.Delay);
+                myTram.Add(myTransport as Tram);
             }
            
         }
@@ -95,108 +92,106 @@ namespace PublicTransportationApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             addForm myForm = new addForm(this);
             myForm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (tramDestinationlbox.SelectedItem != null)
+            if (lbtramDestination.SelectedItem != null)
             {
-                tramTimelbox.Items.RemoveAt(tramDestinationlbox.SelectedIndex);
-                tramDelaylbox.Items.RemoveAt(tramDestinationlbox.SelectedIndex);
-                myTram.RemoveAt(tramDestinationlbox.SelectedIndex);
-                tramDestinationlbox.Items.Remove(tramDestinationlbox.SelectedItem);
+                lbtramTime.Items.RemoveAt(lbtramDestination.SelectedIndex);
+                lbtramDelay.Items.RemoveAt(lbtramDestination.SelectedIndex);
+                myTram.RemoveAt(lbtramDestination.SelectedIndex);
+                lbtramDestination.Items.Remove(lbtramDestination.SelectedItem);
 
                
                 
             }
-            if (trainDestinationlbox.SelectedItem != null)
+            if (lbtrainDestination.SelectedItem != null)
             {
-                trainTimelbox.Items.RemoveAt(trainDestinationlbox.SelectedIndex);
-                trainDelaylbox.Items.RemoveAt(trainDestinationlbox.SelectedIndex);
-                myTrain.RemoveAt(trainDestinationlbox.SelectedIndex);
-                trainDestinationlbox.Items.Remove(trainDestinationlbox.SelectedItem);
+                lbtrainTime.Items.RemoveAt(lbtrainDestination.SelectedIndex);
+                lbtrainDelay.Items.RemoveAt(lbtrainDestination.SelectedIndex);
+                myTrain.RemoveAt(lbtrainDestination.SelectedIndex);
+                lbtrainDestination.Items.Remove(lbtrainDestination.SelectedItem);
             }
-            if (busDestinationlbox.SelectedItem != null)
+            if (lbbusDestination.SelectedItem != null)
             {
-                busTimelbox.Items.RemoveAt(busDestinationlbox.SelectedIndex);
-                busDelaylbox.Items.RemoveAt(busDestinationlbox.SelectedIndex);
-                myBus.RemoveAt(busDestinationlbox.SelectedIndex);
-                busDestinationlbox.Items.Remove(busDestinationlbox.SelectedItem);
+                lbbusTime.Items.RemoveAt(lbbusDestination.SelectedIndex);
+                lbbusDelay.Items.RemoveAt(lbbusDestination.SelectedIndex);
+                myBus.RemoveAt(lbbusDestination.SelectedIndex);
+                lbbusDestination.Items.Remove(lbbusDestination.SelectedItem);
 
             }
         }
 
         private void trainDestinationlbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((busDestinationlbox.SelectedItems != null && tramDestinationlbox.SelectedItem != null) || (busDestinationlbox.SelectedItems != null || tramDestinationlbox.SelectedItem != null) )
+            if ((lbbusDestination.SelectedItems != null && lbtramDestination.SelectedItem != null) || (lbbusDestination.SelectedItems != null || lbtramDestination.SelectedItem != null) )
             {
-                busDestinationlbox.SelectedItem = null;
-                tramDestinationlbox.SelectedItem = null;
-                trainTimelbox.SelectedIndex = trainDestinationlbox.SelectedIndex;
-                trainDelaylbox.SelectedIndex = trainDestinationlbox.SelectedIndex;
+                lbbusDestination.SelectedItem = null;
+                lbtramDestination.SelectedItem = null;
+                lbtrainTime.SelectedIndex = lbtrainDestination.SelectedIndex;
+                lbtrainDelay.SelectedIndex = lbtrainDestination.SelectedIndex;
             }
         }
 
         private void busDestinationlbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((trainDestinationlbox.SelectedItems != null && tramDestinationlbox.SelectedItem != null) || (trainDestinationlbox.SelectedItems != null || tramDestinationlbox.SelectedItem != null))
+            if ((lbtrainDestination.SelectedItems != null && lbtramDestination.SelectedItem != null) || (lbtrainDestination.SelectedItems != null || lbtramDestination.SelectedItem != null))
             {
-                trainDestinationlbox.SelectedItem = null;
-                tramDestinationlbox.SelectedItem = null;
-                busTimelbox.SelectedIndex = busDestinationlbox.SelectedIndex;
-                busDelaylbox.SelectedIndex = busDestinationlbox.SelectedIndex;
+                lbtrainDestination.SelectedItem = null;
+                lbtramDestination.SelectedItem = null;
+                lbbusTime.SelectedIndex = lbbusDestination.SelectedIndex;
+                lbbusDelay.SelectedIndex = lbbusDestination.SelectedIndex;
             }
         }
 
         private void tramDestinationlbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((trainDestinationlbox.SelectedItems != null && busDestinationlbox.SelectedItem != null) || (trainDestinationlbox.SelectedItems != null || busDestinationlbox.SelectedItem != null))
+            if ((lbtrainDestination.SelectedItems != null && lbbusDestination.SelectedItem != null) || (lbtrainDestination.SelectedItems != null || lbbusDestination.SelectedItem != null))
             {
-                trainDestinationlbox.SelectedItem = null;
-                busDestinationlbox.SelectedItem = null;
-                tramTimelbox.SelectedIndex = tramDestinationlbox.SelectedIndex;
-                tramDelaylbox.SelectedIndex = tramDestinationlbox.SelectedIndex;
+                lbtrainDestination.SelectedItem = null;
+                lbbusDestination.SelectedItem = null;
+                lbtramTime.SelectedIndex = lbtramDestination.SelectedIndex;
+                lbtramDelay.SelectedIndex = lbtramDestination.SelectedIndex;
             }
         }
         
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAddDelay_Click(object sender, EventArgs e)
         {
-            // TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            if (tramDestinationlbox.SelectedItem != null)
+           
+            if (lbtramDestination.SelectedItem != null)
             {
-                int index = Convert.ToInt32(tramDestinationlbox.SelectedIndex);
+                int index = Convert.ToInt32(lbtramDestination.SelectedIndex);
                 int delay = Convert.ToInt32(delayTextbox.Text);
                 Tram tr = myTram.ElementAt(index);
-                tr.DelayTram(tr, delay);
-                tramDelaylbox.Items.RemoveAt(tramDestinationlbox.SelectedIndex);
-                tramDelaylbox.Items.Add(tr.Delay);
+                tr.DelayTram(tr, tr.Delay+delay);
+                lbtramDelay.Items.RemoveAt(lbtramDestination.SelectedIndex);
+                lbtramDelay.Items.Add(tr.Delay);
 
             }
-            if (trainDestinationlbox.SelectedItem != null)
+            if (lbtrainDestination.SelectedItem != null)
             {
-                int index = Convert.ToInt32(trainDestinationlbox.SelectedIndex);
+                int index = Convert.ToInt32(lbtrainDestination.SelectedIndex);
                 int delay = Convert.ToInt32(delayTextbox.Text);
                 Train t = myTrain.ElementAt(index);
-                t.DelayTrain(t, delay);
-                trainDelaylbox.Items.RemoveAt(trainDestinationlbox.SelectedIndex);
-                trainDelaylbox.Items.Add(t.Delay);
+                t.DelayTrain(t, t.Delay+delay);
+                lbtrainDelay.Items.RemoveAt(lbtrainDestination.SelectedIndex);
+                lbtrainDelay.Items.Add(t.Delay);
 
 
             }
-            if (busDestinationlbox.SelectedItem != null)
+            if (lbbusDestination.SelectedItem != null)
             {
-                int index = Convert.ToInt32(busDestinationlbox.SelectedIndex);
+                int index = Convert.ToInt32(lbbusDestination.SelectedIndex);
                 int delay = Convert.ToInt32(delayTextbox.Text);
                 Bus b = myBus.ElementAt(index);
-                b.DelayBus(b, delay);
-                //busDelaylbox.Refresh(); -- I dont know why it does not refresh the delaylistbox, I;ve tried everything 
-                // so I remove and add.
-                busDelaylbox.Items.RemoveAt(busDestinationlbox.SelectedIndex);
-                busDelaylbox.Items.Add(b.Delay);
+                b.DelayBus(b, b.Delay+delay);
+                lbbusDelay.Items.RemoveAt(lbbusDestination.SelectedIndex);
+                lbbusDelay.Items.Add(b.Delay);
 
                 
             }
@@ -206,19 +201,23 @@ namespace PublicTransportationApp
         {
             if (cbBus.Checked)
             {
-                //clear listbox add items to listobx
                 foreach (Bus b in myBus)
                 {
                     initBus.AddBus(b);
                 }
+                this.lbbusDestination.Show();
+                this.lbbusDelay.Show();
+                this.lbbusTime.Show();
             }
             else
             {
-            //clear listbox
                 foreach (Bus b in myBus)
                 {
                     initBus.RemoveBus(b);
                 }
+                this.lbbusDestination.Hide();
+                this.lbbusDelay.Hide();
+                this.lbbusTime.Hide();
             }
             if (cbTrain.Checked)
             {
@@ -226,6 +225,9 @@ namespace PublicTransportationApp
                 {
                     initTrain.AddTrain(t);
                 }
+                this.lbtrainDestination.Show();
+                this.lbtrainDelay.Show();
+                this.lbtrainTime.Show();
             }
             else
             {
@@ -233,6 +235,9 @@ namespace PublicTransportationApp
                 {
                     initTrain.RemoveTrain(t);
                 }
+                this.lbtrainDestination.Hide();
+                this.lbtrainDelay.Hide();
+                this.lbtrainTime.Hide();
             }
             if (cbTram.Checked)
             {
@@ -240,6 +245,9 @@ namespace PublicTransportationApp
                 {
                     initTram.AddTram(t);
                 }
+                this.lbtramDestination.Show();
+                this.lbtramDelay.Show();
+                this.lbtramTime.Show();
             }
             else
             {
@@ -247,8 +255,49 @@ namespace PublicTransportationApp
                 {
                     initTram.RemoveTram(t);
                 }
+                this.lbtramDestination.Hide();
+                this.lbtramDelay.Hide();
+                this.lbtramTime.Hide();
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval += 5000;
+            if (myTram.Count != 0)
+            {
+                lbtramTime.Items.RemoveAt(0);
+                lbtramDelay.Items.RemoveAt(0);
+                myTram.RemoveAt(0);
+                lbtramDestination.Items.RemoveAt(0);
+            }
+            if
+               (myTrain.Count != 0)
+            {
+                lbtrainTime.Items.RemoveAt(0);
+                lbtrainDelay.Items.RemoveAt(0);
+                myTrain.RemoveAt(0);
+                lbtrainDestination.Items.RemoveAt(0);
+            }
+            if (myBus.Count != 0)
+            {
+                lbbusTime.Items.RemoveAt(0);
+                lbbusDelay.Items.RemoveAt(0);
+                myBus.RemoveAt(0);
+                lbbusDestination.Items.RemoveAt(0);
+            }
+
         }
+
+        private void BtnStopTimer_Click(object sender, EventArgs e)
+        {
+            this.timer1.Stop();
+        }
+
+        private void btnStartTimer_Click(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+        }
+    }
     }
 
