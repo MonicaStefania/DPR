@@ -298,10 +298,7 @@ namespace PublicTransportationApp
                 this.lbtramDestination.SetSelected(0, true);
                 btnRemove.PerformClick();
 
-                //lbtramTime.Items.RemoveAt(0);
-                //lbtramDelay.Items.RemoveAt(0);
-                //myTram.RemoveAt(0);
-                //lbtramDestination.Items.RemoveAt(0);
+
             }
             if
                (myTrain.Count != 0)
@@ -309,20 +306,14 @@ namespace PublicTransportationApp
                 this.lbtrainDestination.SetSelected(0, true);
                 btnRemove.PerformClick();
 
-                //lbtrainTime.Items.RemoveAt(0);
-                //lbtrainDelay.Items.RemoveAt(0);
-                //myTrain.RemoveAt(0);
-                //lbtrainDestination.Items.RemoveAt(0);
+                
             }
             if (myBus.Count != 0)
             {
                 this.lbbusDestination.SetSelected(0, true);
                 btnRemove.PerformClick();
 
-                //lbbusTime.Items.RemoveAt(0);
-                //lbbusDelay.Items.RemoveAt(0);
-                //myBus.RemoveAt(0);
-                //lbbusDestination.Items.RemoveAt(0);
+           
             }
 
         }

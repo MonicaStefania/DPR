@@ -18,3 +18,4 @@ D:\Documents\2015-2016\Block7\DPR\DPR\PublicTransportationApp\PublicTransportati
 D:\Documents\2015-2016\Block7\DPR\DPR\PublicTransportationApp\PublicTransportationApp\bin\Debug\PublicTransportationApp.pdb
 D:\Documents\2015-2016\Block7\DPR\DPR\PublicTransportationApp\PublicTransportationApp\obj\Debug\PublicTransportationApp.exe
 D:\Documents\2015-2016\Block7\DPR\DPR\PublicTransportationApp\PublicTransportationApp\obj\Debug\PublicTransportationApp.pdb
+D:\Documents\2015-2016\Block7\DPR\DPR\PublicTransportationApp\PublicTransportationApp\obj\Debug\PublicTransportationApp.csprojResolveAssemblyReference.cache
