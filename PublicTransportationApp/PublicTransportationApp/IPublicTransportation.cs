@@ -11,12 +11,6 @@ namespace PublicTransportationApp
         void Attach(IObserver o);
         void Detach(IObserver o);
         void Notify();
-        bool isDelayed { get; set; }
-        string From { get; set; }
-        string To { get; set; }
-        int Hour { get; set; }
-        int Minutes { get; set; }
-        int Delay { get; set; }
-        bool State();
+        string State();
     }
 }

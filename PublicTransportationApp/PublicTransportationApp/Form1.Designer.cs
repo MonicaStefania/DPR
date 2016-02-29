@@ -74,6 +74,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btnStartTimer = new System.Windows.Forms.Button();
             this.BtnStopTimer = new System.Windows.Forms.Button();
+            this.lblInfoTimer = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -518,11 +519,20 @@
             this.BtnStopTimer.UseVisualStyleBackColor = true;
             this.BtnStopTimer.Click += new System.EventHandler(this.BtnStopTimer_Click);
             // 
+            // lblInfoTimer
+            // 
+            this.lblInfoTimer.AutoSize = true;
+            this.lblInfoTimer.Location = new System.Drawing.Point(768, 94);
+            this.lblInfoTimer.Name = "lblInfoTimer";
+            this.lblInfoTimer.Size = new System.Drawing.Size(0, 13);
+            this.lblInfoTimer.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 500);
+            this.Controls.Add(this.lblInfoTimer);
             this.Controls.Add(this.BtnStopTimer);
             this.Controls.Add(this.btnStartTimer);
             this.Controls.Add(this.groupBox7);
@@ -553,6 +563,7 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -603,6 +614,7 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btnStartTimer;
         private System.Windows.Forms.Button BtnStopTimer;
+        private System.Windows.Forms.Label lblInfoTimer;
     }
 }
 

@@ -26,12 +26,14 @@ namespace PublicTransportationApp
         public string To { get; set; }
         public int Hour { get; set; }
         public int Minutes { get; set; }
-
+        public string state { get; set; }
         public void AddTrain(Train T)
         {
+            T.state = "added";
             if (T.Delay > 0)
             {
                 T.isDelayed = true;
+                T.state = "delayed";
             }
             else
             {
@@ -43,6 +45,7 @@ namespace PublicTransportationApp
         }
         public void RemoveTrain(Train t)
         {
+            t.state = "removed";
             myTrains.Remove(t);
             Notify();
         }
@@ -50,12 +53,10 @@ namespace PublicTransportationApp
         {
             t.isDelayed = true;
             t.Delay = delay;
+            t.state = "delayed";
             Notify();
         }
-        public string toString()
-        {
-            return To + " - " + From + " " + Hour + ":" + Minutes + "Delay: " + Delay;
-        }
+
         public void Attach(IObserver o)
         {
             myObservers.Add(o);
@@ -76,9 +77,9 @@ namespace PublicTransportationApp
             }
          
         }
-        public bool State()
+        public String State()
         {
-            return isDelayed;
+            return state;
         }
 
  

@@ -27,6 +27,7 @@ namespace PublicTransportationApp
         public string To { get; set; }
         public int Hour { get; set; }
         public int Minutes { get; set; }
+        public string state { get; set; }
 
         public void AddTram(Tram T)
         {
@@ -34,10 +35,13 @@ namespace PublicTransportationApp
             if (T.Delay > 0)
             {
                 T.isDelayed = true;
+                T.state = "delayed";             
             }
             else
             {
                 T.isDelayed = false;
+                T.state = "added";
+
             }
             myTrams.Add(T);
             Notify();
@@ -45,18 +49,17 @@ namespace PublicTransportationApp
         }
         public void RemoveTram(Tram t)
         {
+           t.state = "removed";
             myTrams.Remove(t);
             Notify();
+                       
         }
         public void DelayTram(Tram t, int delay)
         {
             t.isDelayed = true;
             t.Delay = delay;
+            t.state = "delayed";
             Notify();
-        }
-        public string toString()
-        {
-            return To + " - " + From + " " + Hour + ":" + Minutes + "Delay: " + Delay;
         }
         public void Attach(IObserver o)
         {
@@ -78,10 +81,12 @@ namespace PublicTransportationApp
             }
 
         }
-        public bool State()
+        public String State()
         {
-            return isDelayed;
+            return state;
         }
+
+
 
     }
 }
