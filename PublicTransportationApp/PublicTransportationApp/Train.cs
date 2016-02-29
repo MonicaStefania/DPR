@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PublicTransportationApp
 {
-    class Train : IPublicTransportation
+    public class Train : IPublicTransportation
     {
-        List<Train> myTrains=new List<Train>();
+        public List<Train> myTrains=new List<Train>();
         List<IObserver> myObservers = new List<IObserver>();
         public Train(String from, string to, int h, int min, int delay)
         {

@@ -1,0 +1,8 @@
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\bin\Debug\TestProject.dll
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\bin\Debug\TestProject.pdb
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\bin\Debug\PublicTransportationApp.exe
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\bin\Debug\PublicTransportationApp.pdb
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\obj\Debug\TestProject.dll
+D:\FONTYS\DPR\DPR\DPR\PublicTransportationApp\TestProject\obj\Debug\TestProject.pdb
