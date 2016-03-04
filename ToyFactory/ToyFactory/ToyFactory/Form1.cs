@@ -15,6 +15,19 @@ namespace ToyFactory
         public Form1()
         {
             InitializeComponent();
+            this.pictureBox1.Image = Properties.Resources.eatingdog;
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Media.SoundPlayer myPlayer = new System.Media.SoundPlayer();
+                myPlayer.SoundLocation = "../../Sound/furby_talk.wav";
+                myPlayer.Play();
+            }
+            catch { MessageBox.Show("Sorry, something went wrong"); }
         }
     }
 }

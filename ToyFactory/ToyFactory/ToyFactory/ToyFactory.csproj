@@ -46,23 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baby.cs" />
+    <Compile Include="Barbie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Furby.cs" />
+    <Compile Include="GenericToyFactory.cs" />
+    <Compile Include="IDolls.cs" />
+    <Compile Include="IFigure.cs" />
+    <Compile Include="InfantToys.cs" />
+    <Compile Include="IPets.cs" />
+    <Compile Include="IToys.cs" />
+    <Compile Include="KidsToys.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Sparky.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +90,99 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babycry.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babyeating.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babyjumping.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babylaugh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babyplay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babysleeping.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babytalk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbiecrying.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbieeating.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbieini.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbiejump.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbieplay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbiesleeping.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbietalk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crysparky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eatingdog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eatingfurby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furby talk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furbyini.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\initialbabay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jumpingdog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jumpingfurby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playingfurby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sadfurby.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleepingdog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleepingfurby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparkyinitial.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talkingdog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playingdog.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
