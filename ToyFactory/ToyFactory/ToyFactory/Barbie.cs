@@ -15,6 +15,11 @@ namespace ToyFactory
         {
             this.Name = name;
             this.Avatar = Properties.Resources.barbieini;
+
+        }
+        public Image getAvatar()
+        {
+            return this.Avatar;
         }
         public Image Avatar { get; set; }
         public void cry()

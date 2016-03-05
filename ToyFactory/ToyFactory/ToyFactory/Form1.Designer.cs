@@ -31,34 +31,35 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.petButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dollsbutton = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.playButton = new System.Windows.Forms.Button();
-            this.sleepButton = new System.Windows.Forms.Button();
-            this.eatButton = new System.Windows.Forms.Button();
-            this.talkButton = new System.Windows.Forms.Button();
-            this.cryButton = new System.Windows.Forms.Button();
-            this.jumpButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.removebtn = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Loadbtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.removebtn = new System.Windows.Forms.Button();
-            this.petButton = new System.Windows.Forms.Button();
-            this.dollsbutton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.playButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.sleepButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.eatButton = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.talkButton = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cryButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.jumpButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toyNameLabel = new System.Windows.Forms.Label();
+            this.btnaddBarbie = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,6 +88,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnaddBarbie);
             this.groupBox1.Controls.Add(this.petButton);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -99,6 +101,43 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Create";
+            // 
+            // petButton
+            // 
+            this.petButton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
+            this.petButton.Location = new System.Drawing.Point(130, 90);
+            this.petButton.Name = "petButton";
+            this.petButton.Size = new System.Drawing.Size(60, 37);
+            this.petButton.TabIndex = 7;
+            this.petButton.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(142, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 19);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Pet:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 19);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Doll:";
+            // 
+            // dollsbutton
+            // 
+            this.dollsbutton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
+            this.dollsbutton.Location = new System.Drawing.Point(6, 90);
+            this.dollsbutton.Name = "dollsbutton";
+            this.dollsbutton.Size = new System.Drawing.Size(60, 37);
+            this.dollsbutton.TabIndex = 2;
+            this.dollsbutton.UseVisualStyleBackColor = true;
+            this.dollsbutton.Click += new System.EventHandler(this.dollsbutton_Click);
             // 
             // groupBox2
             // 
@@ -114,23 +153,32 @@
             this.groupBox2.Text = "Remove";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // label2
+            // label7
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 19);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Doll:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 19);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "remove your toy";
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(142, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Pet:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 19);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Click here to ";
+            // 
+            // removebtn
+            // 
+            this.removebtn.Image = global::ToyFactory.Properties.Resources.Tanitakawkaw_Simple_Cute_Exit;
+            this.removebtn.Location = new System.Drawing.Point(130, 25);
+            this.removebtn.Name = "removebtn";
+            this.removebtn.Size = new System.Drawing.Size(60, 47);
+            this.removebtn.TabIndex = 2;
+            this.removebtn.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -145,6 +193,26 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "File:";
+            // 
+            // Loadbtn
+            // 
+            this.Loadbtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
+            this.Loadbtn.Location = new System.Drawing.Point(122, 43);
+            this.Loadbtn.Name = "Loadbtn";
+            this.Loadbtn.Size = new System.Drawing.Size(60, 37);
+            this.Loadbtn.TabIndex = 11;
+            this.Loadbtn.UseVisualStyleBackColor = true;
+            this.Loadbtn.Click += new System.EventHandler(this.Loadbtn_Click);
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
+            this.saveBtn.Location = new System.Drawing.Point(16, 43);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(60, 37);
+            this.saveBtn.TabIndex = 8;
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // label4
             // 
@@ -163,24 +231,6 @@
             this.label5.Size = new System.Drawing.Size(53, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "Save:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 56);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 19);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Click here to ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 75);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 19);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "remove your toy";
             // 
             // groupBox4
             // 
@@ -205,37 +255,6 @@
             this.groupBox4.Text = "Actions:";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(38, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Jump";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(38, 90);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 20);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Cry";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 153);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 20);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Talk";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -245,6 +264,16 @@
             this.label11.Size = new System.Drawing.Size(43, 20);
             this.label11.TabIndex = 11;
             this.label11.Text = "Play";
+            // 
+            // playButton
+            // 
+            this.playButton.Image = global::ToyFactory.Properties.Resources.unnamed;
+            this.playButton.Location = new System.Drawing.Point(132, 339);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(84, 53);
+            this.playButton.TabIndex = 10;
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
             // label12
             // 
@@ -256,6 +285,16 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "Sleep";
             // 
+            // sleepButton
+            // 
+            this.sleepButton.Image = global::ToyFactory.Properties.Resources.sleepy_emoji_0;
+            this.sleepButton.Location = new System.Drawing.Point(132, 278);
+            this.sleepButton.Name = "sleepButton";
+            this.sleepButton.Size = new System.Drawing.Size(84, 53);
+            this.sleepButton.TabIndex = 8;
+            this.sleepButton.UseVisualStyleBackColor = true;
+            this.sleepButton.Click += new System.EventHandler(this.sleepButton_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -266,24 +305,6 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "Eat";
             // 
-            // playButton
-            // 
-            this.playButton.Image = global::ToyFactory.Properties.Resources.unnamed;
-            this.playButton.Location = new System.Drawing.Point(132, 339);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(84, 53);
-            this.playButton.TabIndex = 10;
-            this.playButton.UseVisualStyleBackColor = true;
-            // 
-            // sleepButton
-            // 
-            this.sleepButton.Image = global::ToyFactory.Properties.Resources.sleepy_emoji_0;
-            this.sleepButton.Location = new System.Drawing.Point(132, 278);
-            this.sleepButton.Name = "sleepButton";
-            this.sleepButton.Size = new System.Drawing.Size(84, 53);
-            this.sleepButton.TabIndex = 8;
-            this.sleepButton.UseVisualStyleBackColor = true;
-            // 
             // eatButton
             // 
             this.eatButton.Image = global::ToyFactory.Properties.Resources.smiley_with_fork_and_knife;
@@ -292,6 +313,17 @@
             this.eatButton.Size = new System.Drawing.Size(84, 53);
             this.eatButton.TabIndex = 6;
             this.eatButton.UseVisualStyleBackColor = true;
+            this.eatButton.Click += new System.EventHandler(this.eatButton_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(38, 153);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 20);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Talk";
             // 
             // talkButton
             // 
@@ -301,6 +333,17 @@
             this.talkButton.Size = new System.Drawing.Size(84, 53);
             this.talkButton.TabIndex = 4;
             this.talkButton.UseVisualStyleBackColor = true;
+            this.talkButton.Click += new System.EventHandler(this.talkButton_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(38, 90);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 20);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Cry";
             // 
             // cryButton
             // 
@@ -310,6 +353,18 @@
             this.cryButton.Size = new System.Drawing.Size(84, 53);
             this.cryButton.TabIndex = 2;
             this.cryButton.UseVisualStyleBackColor = true;
+            this.cryButton.Click += new System.EventHandler(this.cryButton_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(38, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 20);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Jump";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // jumpButton
             // 
@@ -320,52 +375,6 @@
             this.jumpButton.TabIndex = 0;
             this.jumpButton.UseVisualStyleBackColor = true;
             this.jumpButton.Click += new System.EventHandler(this.jumpButton_Click);
-            // 
-            // Loadbtn
-            // 
-            this.Loadbtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
-            this.Loadbtn.Location = new System.Drawing.Point(122, 43);
-            this.Loadbtn.Name = "Loadbtn";
-            this.Loadbtn.Size = new System.Drawing.Size(60, 37);
-            this.Loadbtn.TabIndex = 11;
-            this.Loadbtn.UseVisualStyleBackColor = true;
-            // 
-            // saveBtn
-            // 
-            this.saveBtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
-            this.saveBtn.Location = new System.Drawing.Point(16, 43);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(60, 37);
-            this.saveBtn.TabIndex = 8;
-            this.saveBtn.UseVisualStyleBackColor = true;
-            // 
-            // removebtn
-            // 
-            this.removebtn.Image = global::ToyFactory.Properties.Resources.Tanitakawkaw_Simple_Cute_Exit;
-            this.removebtn.Location = new System.Drawing.Point(130, 25);
-            this.removebtn.Name = "removebtn";
-            this.removebtn.Size = new System.Drawing.Size(60, 47);
-            this.removebtn.TabIndex = 2;
-            this.removebtn.UseVisualStyleBackColor = true;
-            // 
-            // petButton
-            // 
-            this.petButton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.petButton.Location = new System.Drawing.Point(130, 90);
-            this.petButton.Name = "petButton";
-            this.petButton.Size = new System.Drawing.Size(60, 37);
-            this.petButton.TabIndex = 7;
-            this.petButton.UseVisualStyleBackColor = true;
-            // 
-            // dollsbutton
-            // 
-            this.dollsbutton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.dollsbutton.Location = new System.Drawing.Point(6, 90);
-            this.dollsbutton.Name = "dollsbutton";
-            this.dollsbutton.Size = new System.Drawing.Size(60, 37);
-            this.dollsbutton.TabIndex = 2;
-            this.dollsbutton.UseVisualStyleBackColor = true;
-            this.dollsbutton.Click += new System.EventHandler(this.dollsbutton_Click);
             // 
             // pictureBox1
             // 
@@ -384,6 +393,16 @@
             this.toyNameLabel.Size = new System.Drawing.Size(114, 24);
             this.toyNameLabel.TabIndex = 9;
             this.toyNameLabel.Text = "Toy\'sName";
+            // 
+            // btnaddBarbie
+            // 
+            this.btnaddBarbie.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
+            this.btnaddBarbie.Location = new System.Drawing.Point(72, 55);
+            this.btnaddBarbie.Name = "btnaddBarbie";
+            this.btnaddBarbie.Size = new System.Drawing.Size(60, 37);
+            this.btnaddBarbie.TabIndex = 8;
+            this.btnaddBarbie.UseVisualStyleBackColor = true;
+            this.btnaddBarbie.Click += new System.EventHandler(this.btnaddBarbie_Click);
             // 
             // Form1
             // 
@@ -446,6 +465,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button eatButton;
         private System.Windows.Forms.Label toyNameLabel;
+        private System.Windows.Forms.Button btnaddBarbie;
     }
 }
 

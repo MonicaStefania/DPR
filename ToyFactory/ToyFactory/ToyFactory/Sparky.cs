@@ -19,6 +19,10 @@ namespace ToyFactory
             this.Name = name;
             this.Avatar = Properties.Resources.sparkyinitial;
         }
+        public Image getAvatar()
+        {
+            return this.Avatar;
+        }
         public void cry()
         {
             this.Avatar = Properties.Resources.crysparky;

@@ -16,8 +16,8 @@ namespace ToyFactory
 
         public IFigure createGirlFigure(string name)
         {
+            
             return (new Barbie(name));
         }
-       
     }
 }

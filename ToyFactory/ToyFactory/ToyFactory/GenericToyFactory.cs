@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.IO;
+using System.Drawing;
 
 namespace ToyFactory
 {[Serializable]
@@ -14,6 +15,10 @@ namespace ToyFactory
         IFigure figure;
         public bool GameOver { get; set; }
         //Constructor for deserialization
+        public GenericToyFactory()
+        {
+            this.GameOver = false;
+        }
         public GenericToyFactory(SerializationInfo info, StreamingContext context)
         {
             this.figure = (IFigure)info.GetValue("figure", typeof(IFigure));
@@ -46,6 +51,7 @@ namespace ToyFactory
             }
             else figure = t.createBoyFigure(name);
         }
+     
         public void stop()
         {
             GameOver = true;
@@ -80,7 +86,10 @@ namespace ToyFactory
                 
             }
         }
-
+        public Image avatar()
+        {
+            return this.figure.getAvatar();
+        }
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("figure", figure);

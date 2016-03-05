@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace ToyFactory
 {
@@ -15,5 +16,6 @@ namespace ToyFactory
         void eat();
         void sleep();
         void play();
+        Image getAvatar();
     }
 }
