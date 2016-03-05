@@ -11,17 +11,18 @@ namespace ToyFactory
     [Serializable]
     class Furby : IPets, IFigure
     {
-        private String Name { get; set; }
+        public String Name { get; set; }
         public Image Avatar { get; set; }
+
+        public string Owner { get; set; }
+
         public Furby(String name)
         {
             this.Name = name;
             this.Avatar = Properties.Resources.furbyini;
+            this.Owner = "user";
         }
-        public Image getAvatar()
-        {
-            return this.Avatar;
-        }
+      
         public void cry()
         {
             this.Avatar = Properties.Resources.sadfurby;

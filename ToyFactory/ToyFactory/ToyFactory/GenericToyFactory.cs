@@ -22,6 +22,7 @@ namespace ToyFactory
         public GenericToyFactory(SerializationInfo info, StreamingContext context)
         {
             this.figure = (IFigure)info.GetValue("figure", typeof(IFigure));
+         
         }
         public static void SaveToFile(GenericToyFactory gtf, String path)
         {
@@ -86,13 +87,19 @@ namespace ToyFactory
                 
             }
         }
-        public Image avatar()
+        public Image getAvatar()
         {
-            return this.figure.getAvatar();
+            return this.figure.Avatar;
         }
+        public String getName()
+        {
+            return this.figure.Name;
+        }
+        
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("figure", figure);
+           
         }
     }
 }

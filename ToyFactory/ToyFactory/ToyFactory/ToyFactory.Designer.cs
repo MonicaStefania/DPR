@@ -1,6 +1,6 @@
 ﻿namespace ToyFactory
 {
-    partial class Form1
+    partial class ToyFactory
     {
         /// <summary>
         /// Required designer variable.
@@ -31,33 +31,33 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.sparkyRadiobtn = new System.Windows.Forms.RadioButton();
-            this.ferbyRadiobtn = new System.Windows.Forms.RadioButton();
-            this.babyRadiobtn = new System.Windows.Forms.RadioButton();
-            this.barbieRadiobtn = new System.Windows.Forms.RadioButton();
-            this.btnaddBarbie = new System.Windows.Forms.Button();
+            this.rbSparky = new System.Windows.Forms.RadioButton();
+            this.rbFurby = new System.Windows.Forms.RadioButton();
+            this.rbBaby = new System.Windows.Forms.RadioButton();
+            this.rbBarbie = new System.Windows.Forms.RadioButton();
+            this.btnAddToy = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.removebtn = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Loadbtn = new System.Windows.Forms.Button();
-            this.saveBtn = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.playButton = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.sleepButton = new System.Windows.Forms.Button();
+            this.btnSleep = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.eatButton = new System.Windows.Forms.Button();
+            this.btnEat = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.talkButton = new System.Windows.Forms.Button();
+            this.btnTalk = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.cryButton = new System.Windows.Forms.Button();
+            this.btnCry = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.jumpButton = new System.Windows.Forms.Button();
+            this.btnJump = new System.Windows.Forms.Button();
             this.toyNameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -71,11 +71,11 @@
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.sparkyRadiobtn);
-            this.groupBox1.Controls.Add(this.ferbyRadiobtn);
-            this.groupBox1.Controls.Add(this.babyRadiobtn);
-            this.groupBox1.Controls.Add(this.barbieRadiobtn);
-            this.groupBox1.Controls.Add(this.btnaddBarbie);
+            this.groupBox1.Controls.Add(this.rbSparky);
+            this.groupBox1.Controls.Add(this.rbFurby);
+            this.groupBox1.Controls.Add(this.rbBaby);
+            this.groupBox1.Controls.Add(this.rbBarbie);
+            this.groupBox1.Controls.Add(this.btnAddToy);
             this.groupBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(26, 32);
             this.groupBox1.Name = "groupBox1";
@@ -100,65 +100,65 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Name your toy:";
             // 
-            // sparkyRadiobtn
+            // rbSparky
             // 
-            this.sparkyRadiobtn.AutoSize = true;
-            this.sparkyRadiobtn.Location = new System.Drawing.Point(18, 118);
-            this.sparkyRadiobtn.Name = "sparkyRadiobtn";
-            this.sparkyRadiobtn.Size = new System.Drawing.Size(79, 23);
-            this.sparkyRadiobtn.TabIndex = 13;
-            this.sparkyRadiobtn.TabStop = true;
-            this.sparkyRadiobtn.Text = "Sparky";
-            this.sparkyRadiobtn.UseVisualStyleBackColor = true;
+            this.rbSparky.AutoSize = true;
+            this.rbSparky.Location = new System.Drawing.Point(18, 118);
+            this.rbSparky.Name = "rbSparky";
+            this.rbSparky.Size = new System.Drawing.Size(79, 23);
+            this.rbSparky.TabIndex = 13;
+            this.rbSparky.TabStop = true;
+            this.rbSparky.Text = "Sparky";
+            this.rbSparky.UseVisualStyleBackColor = true;
             // 
-            // ferbyRadiobtn
+            // rbFurby
             // 
-            this.ferbyRadiobtn.AutoSize = true;
-            this.ferbyRadiobtn.Location = new System.Drawing.Point(18, 89);
-            this.ferbyRadiobtn.Name = "ferbyRadiobtn";
-            this.ferbyRadiobtn.Size = new System.Drawing.Size(69, 23);
-            this.ferbyRadiobtn.TabIndex = 12;
-            this.ferbyRadiobtn.TabStop = true;
-            this.ferbyRadiobtn.Text = "Furby";
-            this.ferbyRadiobtn.UseVisualStyleBackColor = true;
+            this.rbFurby.AutoSize = true;
+            this.rbFurby.Location = new System.Drawing.Point(18, 89);
+            this.rbFurby.Name = "rbFurby";
+            this.rbFurby.Size = new System.Drawing.Size(69, 23);
+            this.rbFurby.TabIndex = 12;
+            this.rbFurby.TabStop = true;
+            this.rbFurby.Text = "Furby";
+            this.rbFurby.UseVisualStyleBackColor = true;
             // 
-            // babyRadiobtn
+            // rbBaby
             // 
-            this.babyRadiobtn.AutoSize = true;
-            this.babyRadiobtn.Location = new System.Drawing.Point(16, 57);
-            this.babyRadiobtn.Name = "babyRadiobtn";
-            this.babyRadiobtn.Size = new System.Drawing.Size(94, 23);
-            this.babyRadiobtn.TabIndex = 11;
-            this.babyRadiobtn.TabStop = true;
-            this.babyRadiobtn.Text = "Baby doll";
-            this.babyRadiobtn.UseVisualStyleBackColor = true;
+            this.rbBaby.AutoSize = true;
+            this.rbBaby.Location = new System.Drawing.Point(16, 57);
+            this.rbBaby.Name = "rbBaby";
+            this.rbBaby.Size = new System.Drawing.Size(94, 23);
+            this.rbBaby.TabIndex = 11;
+            this.rbBaby.TabStop = true;
+            this.rbBaby.Text = "Baby doll";
+            this.rbBaby.UseVisualStyleBackColor = true;
             // 
-            // barbieRadiobtn
+            // rbBarbie
             // 
-            this.barbieRadiobtn.AutoSize = true;
-            this.barbieRadiobtn.Location = new System.Drawing.Point(16, 28);
-            this.barbieRadiobtn.Name = "barbieRadiobtn";
-            this.barbieRadiobtn.Size = new System.Drawing.Size(103, 23);
-            this.barbieRadiobtn.TabIndex = 10;
-            this.barbieRadiobtn.TabStop = true;
-            this.barbieRadiobtn.Text = "Barbie doll";
-            this.barbieRadiobtn.UseVisualStyleBackColor = true;
+            this.rbBarbie.AutoSize = true;
+            this.rbBarbie.Location = new System.Drawing.Point(16, 28);
+            this.rbBarbie.Name = "rbBarbie";
+            this.rbBarbie.Size = new System.Drawing.Size(103, 23);
+            this.rbBarbie.TabIndex = 10;
+            this.rbBarbie.TabStop = true;
+            this.rbBarbie.Text = "Barbie doll";
+            this.rbBarbie.UseVisualStyleBackColor = true;
             // 
-            // btnaddBarbie
+            // btnAddToy
             // 
-            this.btnaddBarbie.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.btnaddBarbie.Location = new System.Drawing.Point(130, 173);
-            this.btnaddBarbie.Name = "btnaddBarbie";
-            this.btnaddBarbie.Size = new System.Drawing.Size(60, 37);
-            this.btnaddBarbie.TabIndex = 8;
-            this.btnaddBarbie.UseVisualStyleBackColor = true;
-            this.btnaddBarbie.Click += new System.EventHandler(this.btnaddBarbie_Click);
+            this.btnAddToy.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
+            this.btnAddToy.Location = new System.Drawing.Point(130, 173);
+            this.btnAddToy.Name = "btnAddToy";
+            this.btnAddToy.Size = new System.Drawing.Size(60, 37);
+            this.btnAddToy.TabIndex = 8;
+            this.btnAddToy.UseVisualStyleBackColor = true;
+            this.btnAddToy.Click += new System.EventHandler(this.btnAddToy_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.removebtn);
+            this.groupBox2.Controls.Add(this.btnRemove);
             this.groupBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(26, 260);
             this.groupBox2.Name = "groupBox2";
@@ -166,7 +166,6 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Remove";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label7
             // 
@@ -186,20 +185,20 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Click here to ";
             // 
-            // removebtn
+            // btnRemove
             // 
-            this.removebtn.Image = global::ToyFactory.Properties.Resources.Tanitakawkaw_Simple_Cute_Exit;
-            this.removebtn.Location = new System.Drawing.Point(130, 25);
-            this.removebtn.Name = "removebtn";
-            this.removebtn.Size = new System.Drawing.Size(60, 47);
-            this.removebtn.TabIndex = 2;
-            this.removebtn.UseVisualStyleBackColor = true;
-            this.removebtn.Click += new System.EventHandler(this.removebtn_Click);
+            this.btnRemove.Image = global::ToyFactory.Properties.Resources.Tanitakawkaw_Simple_Cute_Exit;
+            this.btnRemove.Location = new System.Drawing.Point(130, 25);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(60, 47);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.Loadbtn);
-            this.groupBox3.Controls.Add(this.saveBtn);
+            this.groupBox3.Controls.Add(this.btnLoad);
+            this.groupBox3.Controls.Add(this.btnSave);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,25 +209,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "File:";
             // 
-            // Loadbtn
+            // btnLoad
             // 
-            this.Loadbtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
-            this.Loadbtn.Location = new System.Drawing.Point(122, 43);
-            this.Loadbtn.Name = "Loadbtn";
-            this.Loadbtn.Size = new System.Drawing.Size(60, 37);
-            this.Loadbtn.TabIndex = 11;
-            this.Loadbtn.UseVisualStyleBackColor = true;
-            this.Loadbtn.Click += new System.EventHandler(this.Loadbtn_Click);
+            this.btnLoad.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
+            this.btnLoad.Location = new System.Drawing.Point(122, 43);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(60, 37);
+            this.btnLoad.TabIndex = 11;
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // saveBtn
+            // btnSave
             // 
-            this.saveBtn.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
-            this.saveBtn.Location = new System.Drawing.Point(16, 43);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(60, 37);
-            this.saveBtn.TabIndex = 8;
-            this.saveBtn.UseVisualStyleBackColor = true;
-            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            this.btnSave.Image = global::ToyFactory.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
+            this.btnSave.Location = new System.Drawing.Point(16, 43);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(60, 37);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label4
             // 
@@ -251,17 +250,17 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.playButton);
+            this.groupBox4.Controls.Add(this.btnPlay);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.sleepButton);
+            this.groupBox4.Controls.Add(this.btnSleep);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.eatButton);
+            this.groupBox4.Controls.Add(this.btnEat);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.talkButton);
+            this.groupBox4.Controls.Add(this.btnTalk);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.cryButton);
+            this.groupBox4.Controls.Add(this.btnCry);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.jumpButton);
+            this.groupBox4.Controls.Add(this.btnJump);
             this.groupBox4.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(645, 32);
             this.groupBox4.Name = "groupBox4";
@@ -269,7 +268,6 @@
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Actions:";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label11
             // 
@@ -281,15 +279,15 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Play";
             // 
-            // playButton
+            // btnPlay
             // 
-            this.playButton.Image = global::ToyFactory.Properties.Resources.unnamed;
-            this.playButton.Location = new System.Drawing.Point(132, 339);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(84, 53);
-            this.playButton.TabIndex = 10;
-            this.playButton.UseVisualStyleBackColor = true;
-            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            this.btnPlay.Image = global::ToyFactory.Properties.Resources.unnamed;
+            this.btnPlay.Location = new System.Drawing.Point(132, 339);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(84, 53);
+            this.btnPlay.TabIndex = 10;
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // label12
             // 
@@ -301,15 +299,15 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "Sleep";
             // 
-            // sleepButton
+            // btnSleep
             // 
-            this.sleepButton.Image = global::ToyFactory.Properties.Resources.sleepy_emoji_0;
-            this.sleepButton.Location = new System.Drawing.Point(132, 278);
-            this.sleepButton.Name = "sleepButton";
-            this.sleepButton.Size = new System.Drawing.Size(84, 53);
-            this.sleepButton.TabIndex = 8;
-            this.sleepButton.UseVisualStyleBackColor = true;
-            this.sleepButton.Click += new System.EventHandler(this.sleepButton_Click);
+            this.btnSleep.Image = global::ToyFactory.Properties.Resources.sleepy_emoji_0;
+            this.btnSleep.Location = new System.Drawing.Point(132, 278);
+            this.btnSleep.Name = "btnSleep";
+            this.btnSleep.Size = new System.Drawing.Size(84, 53);
+            this.btnSleep.TabIndex = 8;
+            this.btnSleep.UseVisualStyleBackColor = true;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
             // 
             // label13
             // 
@@ -321,15 +319,15 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "Eat";
             // 
-            // eatButton
+            // btnEat
             // 
-            this.eatButton.Image = global::ToyFactory.Properties.Resources.smiley_with_fork_and_knife;
-            this.eatButton.Location = new System.Drawing.Point(132, 212);
-            this.eatButton.Name = "eatButton";
-            this.eatButton.Size = new System.Drawing.Size(84, 53);
-            this.eatButton.TabIndex = 6;
-            this.eatButton.UseVisualStyleBackColor = true;
-            this.eatButton.Click += new System.EventHandler(this.eatButton_Click);
+            this.btnEat.Image = global::ToyFactory.Properties.Resources.smiley_with_fork_and_knife;
+            this.btnEat.Location = new System.Drawing.Point(132, 212);
+            this.btnEat.Name = "btnEat";
+            this.btnEat.Size = new System.Drawing.Size(84, 53);
+            this.btnEat.TabIndex = 6;
+            this.btnEat.UseVisualStyleBackColor = true;
+            this.btnEat.Click += new System.EventHandler(this.btnEat_Click);
             // 
             // label10
             // 
@@ -341,15 +339,15 @@
             this.label10.TabIndex = 5;
             this.label10.Text = "Talk";
             // 
-            // talkButton
+            // btnTalk
             // 
-            this.talkButton.Image = global::ToyFactory.Properties.Resources.images;
-            this.talkButton.Location = new System.Drawing.Point(132, 140);
-            this.talkButton.Name = "talkButton";
-            this.talkButton.Size = new System.Drawing.Size(84, 53);
-            this.talkButton.TabIndex = 4;
-            this.talkButton.UseVisualStyleBackColor = true;
-            this.talkButton.Click += new System.EventHandler(this.talkButton_Click);
+            this.btnTalk.Image = global::ToyFactory.Properties.Resources.images;
+            this.btnTalk.Location = new System.Drawing.Point(132, 140);
+            this.btnTalk.Name = "btnTalk";
+            this.btnTalk.Size = new System.Drawing.Size(84, 53);
+            this.btnTalk.TabIndex = 4;
+            this.btnTalk.UseVisualStyleBackColor = true;
+            this.btnTalk.Click += new System.EventHandler(this.btnTalk_Click);
             // 
             // label9
             // 
@@ -361,15 +359,15 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Cry";
             // 
-            // cryButton
+            // btnCry
             // 
-            this.cryButton.Image = global::ToyFactory.Properties.Resources.index;
-            this.cryButton.Location = new System.Drawing.Point(132, 74);
-            this.cryButton.Name = "cryButton";
-            this.cryButton.Size = new System.Drawing.Size(84, 53);
-            this.cryButton.TabIndex = 2;
-            this.cryButton.UseVisualStyleBackColor = true;
-            this.cryButton.Click += new System.EventHandler(this.cryButton_Click);
+            this.btnCry.Image = global::ToyFactory.Properties.Resources.index;
+            this.btnCry.Location = new System.Drawing.Point(132, 74);
+            this.btnCry.Name = "btnCry";
+            this.btnCry.Size = new System.Drawing.Size(84, 53);
+            this.btnCry.TabIndex = 2;
+            this.btnCry.UseVisualStyleBackColor = true;
+            this.btnCry.Click += new System.EventHandler(this.btnCry_Click);
             // 
             // label8
             // 
@@ -380,17 +378,16 @@
             this.label8.Size = new System.Drawing.Size(51, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Jump";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // jumpButton
+            // btnJump
             // 
-            this.jumpButton.Image = global::ToyFactory.Properties.Resources._34100703_happy_smiling_emoticon_cartoon;
-            this.jumpButton.Location = new System.Drawing.Point(132, 12);
-            this.jumpButton.Name = "jumpButton";
-            this.jumpButton.Size = new System.Drawing.Size(84, 53);
-            this.jumpButton.TabIndex = 0;
-            this.jumpButton.UseVisualStyleBackColor = true;
-            this.jumpButton.Click += new System.EventHandler(this.jumpButton_Click);
+            this.btnJump.Image = global::ToyFactory.Properties.Resources._34100703_happy_smiling_emoticon_cartoon;
+            this.btnJump.Location = new System.Drawing.Point(132, 12);
+            this.btnJump.Name = "btnJump";
+            this.btnJump.Size = new System.Drawing.Size(84, 53);
+            this.btnJump.TabIndex = 0;
+            this.btnJump.UseVisualStyleBackColor = true;
+            this.btnJump.Click += new System.EventHandler(this.btnJump_Click);
             // 
             // toyNameLabel
             // 
@@ -409,7 +406,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // ToyFactory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -420,8 +417,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ToyFactory";
+            this.Text = "Toy factory";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -441,35 +438,35 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button removebtn;
+        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button Loadbtn;
-        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button jumpButton;
+        private System.Windows.Forms.Button btnJump;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button cryButton;
+        private System.Windows.Forms.Button btnCry;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button talkButton;
+        private System.Windows.Forms.Button btnTalk;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button sleepButton;
+        private System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button eatButton;
+        private System.Windows.Forms.Button btnEat;
         private System.Windows.Forms.Label toyNameLabel;
-        private System.Windows.Forms.Button btnaddBarbie;
+        private System.Windows.Forms.Button btnAddToy;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton sparkyRadiobtn;
-        private System.Windows.Forms.RadioButton ferbyRadiobtn;
-        private System.Windows.Forms.RadioButton babyRadiobtn;
-        private System.Windows.Forms.RadioButton barbieRadiobtn;
+        private System.Windows.Forms.RadioButton rbSparky;
+        private System.Windows.Forms.RadioButton rbFurby;
+        private System.Windows.Forms.RadioButton rbBaby;
+        private System.Windows.Forms.RadioButton rbBarbie;
     }
 }
 

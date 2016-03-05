@@ -16,6 +16,7 @@ namespace ToyFactory
         void eat();
         void sleep();
         void play();
-        Image getAvatar();
+        Image Avatar { get; set; }
+        String Name { get; set; }
     }
 }

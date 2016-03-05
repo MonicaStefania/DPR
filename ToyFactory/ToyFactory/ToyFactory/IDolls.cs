@@ -9,6 +9,6 @@ namespace ToyFactory
   
     interface IDolls
     {
-        Image Avatar { get; set; }
+        int Age { get; set; }
     }
 }

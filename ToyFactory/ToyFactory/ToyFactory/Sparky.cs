@@ -11,17 +11,19 @@ namespace ToyFactory
 
     class Sparky : IPets, IFigure
     {
-        
-        private String Name { get; set; }
+        public String Name { get; set; }
         public Image Avatar { get; set; }
+
+        public string Owner
+        {
+            get; set;
+        }
+
         public Sparky(String name)
         {
             this.Name = name;
             this.Avatar = Properties.Resources.sparkyinitial;
-        }
-        public Image getAvatar()
-        {
-            return this.Avatar;
+            this.Owner = "user";
         }
         public void cry()
         {

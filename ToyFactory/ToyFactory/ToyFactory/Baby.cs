@@ -10,17 +10,25 @@ namespace ToyFactory
     [Serializable]
     class Baby : IDolls, IFigure
     {
-        private String Name{get;set;}
+        public String Name{get;set;}
+        public String getName()
+        {
+            return this.Name;
+        }
         public Baby(String name)
         {
             this.Name = name;
            this.Avatar = Properties.Resources.initialbabay;
+            this.Age = 1;
         }
         public Image getAvatar()
         {
             return this.Avatar;
         }
         public Image Avatar { get; set; }
+
+        public int Age { get; set; }
+
         public void cry()
         {
             this.Avatar = Properties.Resources.babycry;

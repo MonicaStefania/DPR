@@ -10,18 +10,19 @@ namespace ToyFactory
     [Serializable]
     class Barbie : IDolls, IFigure
     {
-        private String Name { get; set; }
+        public String Name { get; set; }
         public Barbie(String name)
         {
             this.Name = name;
             this.Avatar = Properties.Resources.barbieini;
+            this.Age = 15;
 
         }
-        public Image getAvatar()
-        {
-            return this.Avatar;
-        }
+    
         public Image Avatar { get; set; }
+
+        public int Age { get; set; }
+
         public void cry()
         {
             this.Avatar = Properties.Resources.barbiecrying;

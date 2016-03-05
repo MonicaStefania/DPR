@@ -9,6 +9,6 @@ namespace ToyFactory
 {
     interface IPets
     {
-        Image Avatar { get; set; }
+       String Owner { get; set; }
     }
 }
