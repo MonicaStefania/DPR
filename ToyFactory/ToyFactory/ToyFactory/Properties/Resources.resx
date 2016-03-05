@@ -118,91 +118,121 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Custom-Icon-Design-Pretty-Office-7-Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Pretty-Office-7-Save.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eatingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eatingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jumpingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jumpingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="babycry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\babycry.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="babyeating" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\babyeating.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="babyjumping" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\babyjumping.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="babylaugh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\babylaugh.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="babyplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\babyplay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="babysleeping" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\babysleeping.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="babytalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\babytalk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbiecrying" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbiecrying.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbieeating" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbieeating.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbieini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbieini.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbiejump" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbiejump.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbieplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbieplay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbiesleeping" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbiesleeping.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbietalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbietalk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="playingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="crysparky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crysparky.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eatingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eatingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barbietalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbietalk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleepy_emoji_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sleepy_emoji_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eatingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eatingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\index.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="furbyini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\furbyini.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smiley-with-fork-and-knife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smiley-with-fork-and-knife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="furby_talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\furby talk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="initialbabay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\initialbabay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barbiesleeping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbiesleeping.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jumpingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jumpingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jumpingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jumpingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="playingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sadfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sadfurby.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sleepingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sleepingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sleepingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sleepingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sparkyinitial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sparkyinitial.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barbiejump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbiejump.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="talkingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sleepingdog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sleepingdog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbieini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbieini.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babysleeping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babysleeping.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babylaugh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babylaugh.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbiecrying" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbiecrying.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom-Icon-Design-Pretty-Office-9-Open-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Pretty-Office-9-Open-file.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babytalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babytalk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jumpingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jumpingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbieplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbieplay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babyjumping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babyjumping.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sadfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sadfurby.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sparkyinitial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sparkyinitial.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="initialbabay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\initialbabay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babyplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babyplay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sleepingfurby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sleepingfurby.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tanitakawkaw-Simple-Cute-Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tanitakawkaw-Simple-Cute-Exit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbieeating" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbieeating.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icojam-Blue-Bits-Math-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icojam-Blue-Bits-Math-add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="34100703-happy-smiling-emoticon-cartoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\34100703-happy-smiling-emoticon-cartoon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

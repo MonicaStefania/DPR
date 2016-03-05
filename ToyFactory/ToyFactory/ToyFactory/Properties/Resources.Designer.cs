@@ -63,6 +63,16 @@ namespace ToyFactory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _34100703_happy_smiling_emoticon_cartoon {
+            get {
+                object obj = ResourceManager.GetObject("34100703-happy-smiling-emoticon-cartoon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap babycry {
             get {
                 object obj = ResourceManager.GetObject("babycry", resourceCulture);
@@ -213,6 +223,26 @@ namespace ToyFactory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_7_Save {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-7-Save", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_9_Open_file {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-9-Open-file", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eatingdog {
             get {
                 object obj = ResourceManager.GetObject("eatingdog", resourceCulture);
@@ -246,6 +276,36 @@ namespace ToyFactory.Properties {
         internal static System.Drawing.Bitmap furbyini {
             get {
                 object obj = ResourceManager.GetObject("furbyini", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icojam_Blue_Bits_Math_add {
+            get {
+                object obj = ResourceManager.GetObject("Icojam-Blue-Bits-Math-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap index {
+            get {
+                object obj = ResourceManager.GetObject("index", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +393,26 @@ namespace ToyFactory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sleepy_emoji_0 {
+            get {
+                object obj = ResourceManager.GetObject("sleepy_emoji_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smiley_with_fork_and_knife {
+            get {
+                object obj = ResourceManager.GetObject("smiley-with-fork-and-knife", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sparkyinitial {
             get {
                 object obj = ResourceManager.GetObject("sparkyinitial", resourceCulture);
@@ -346,6 +426,26 @@ namespace ToyFactory.Properties {
         internal static System.Drawing.Bitmap talkingdog {
             get {
                 object obj = ResourceManager.GetObject("talkingdog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tanitakawkaw_Simple_Cute_Exit {
+            get {
+                object obj = ResourceManager.GetObject("Tanitakawkaw-Simple-Cute-Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -12,6 +12,9 @@ namespace ToyFactory
 {
     public partial class Form1 : Form
     {
+        Form2 dollForm = new Form2();
+        Form3 petForm = new Form3();
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +31,36 @@ namespace ToyFactory
                 myPlayer.Play();
             }
             catch { MessageBox.Show("Sorry, something went wrong"); }
+        }
+
+        private void dollsbutton_Click(object sender, EventArgs e)
+        {
+            dollForm.Show();
+        }
+
+        private void petsbutton_Click(object sender, EventArgs e)
+        {
+            petForm.Show();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jumpButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
