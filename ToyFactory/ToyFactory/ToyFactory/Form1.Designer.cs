@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.petButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dollsbutton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sparkyRadiobtn = new System.Windows.Forms.RadioButton();
+            this.ferbyRadiobtn = new System.Windows.Forms.RadioButton();
+            this.babyRadiobtn = new System.Windows.Forms.RadioButton();
+            this.barbieRadiobtn = new System.Windows.Forms.RadioButton();
+            this.btnaddBarbie = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,9 +58,8 @@
             this.cryButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.jumpButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toyNameLabel = new System.Windows.Forms.Label();
-            this.btnaddBarbie = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,77 +67,92 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // groupBox1
             // 
-            this.button1.Location = new System.Drawing.Point(485, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.sparkyRadiobtn);
+            this.groupBox1.Controls.Add(this.ferbyRadiobtn);
+            this.groupBox1.Controls.Add(this.babyRadiobtn);
+            this.groupBox1.Controls.Add(this.barbieRadiobtn);
+            this.groupBox1.Controls.Add(this.btnaddBarbie);
+            this.groupBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(26, 32);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(204, 220);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Create your toy";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(10, 179);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(114, 26);
+            this.textBox1.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 22);
+            this.label1.Location = new System.Drawing.Point(6, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Create your:";
+            this.label1.Size = new System.Drawing.Size(129, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Name your toy:";
             // 
-            // groupBox1
+            // sparkyRadiobtn
             // 
-            this.groupBox1.Controls.Add(this.btnaddBarbie);
-            this.groupBox1.Controls.Add(this.petButton);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dollsbutton);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 32);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(204, 147);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Create";
+            this.sparkyRadiobtn.AutoSize = true;
+            this.sparkyRadiobtn.Location = new System.Drawing.Point(18, 118);
+            this.sparkyRadiobtn.Name = "sparkyRadiobtn";
+            this.sparkyRadiobtn.Size = new System.Drawing.Size(79, 23);
+            this.sparkyRadiobtn.TabIndex = 13;
+            this.sparkyRadiobtn.TabStop = true;
+            this.sparkyRadiobtn.Text = "Sparky";
+            this.sparkyRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // petButton
+            // ferbyRadiobtn
             // 
-            this.petButton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.petButton.Location = new System.Drawing.Point(130, 90);
-            this.petButton.Name = "petButton";
-            this.petButton.Size = new System.Drawing.Size(60, 37);
-            this.petButton.TabIndex = 7;
-            this.petButton.UseVisualStyleBackColor = true;
+            this.ferbyRadiobtn.AutoSize = true;
+            this.ferbyRadiobtn.Location = new System.Drawing.Point(18, 89);
+            this.ferbyRadiobtn.Name = "ferbyRadiobtn";
+            this.ferbyRadiobtn.Size = new System.Drawing.Size(69, 23);
+            this.ferbyRadiobtn.TabIndex = 12;
+            this.ferbyRadiobtn.TabStop = true;
+            this.ferbyRadiobtn.Text = "Furby";
+            this.ferbyRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // babyRadiobtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(142, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Pet:";
+            this.babyRadiobtn.AutoSize = true;
+            this.babyRadiobtn.Location = new System.Drawing.Point(16, 57);
+            this.babyRadiobtn.Name = "babyRadiobtn";
+            this.babyRadiobtn.Size = new System.Drawing.Size(94, 23);
+            this.babyRadiobtn.TabIndex = 11;
+            this.babyRadiobtn.TabStop = true;
+            this.babyRadiobtn.Text = "Baby doll";
+            this.babyRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // barbieRadiobtn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 19);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Doll:";
+            this.barbieRadiobtn.AutoSize = true;
+            this.barbieRadiobtn.Location = new System.Drawing.Point(16, 28);
+            this.barbieRadiobtn.Name = "barbieRadiobtn";
+            this.barbieRadiobtn.Size = new System.Drawing.Size(103, 23);
+            this.barbieRadiobtn.TabIndex = 10;
+            this.barbieRadiobtn.TabStop = true;
+            this.barbieRadiobtn.Text = "Barbie doll";
+            this.barbieRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // dollsbutton
+            // btnaddBarbie
             // 
-            this.dollsbutton.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.dollsbutton.Location = new System.Drawing.Point(6, 90);
-            this.dollsbutton.Name = "dollsbutton";
-            this.dollsbutton.Size = new System.Drawing.Size(60, 37);
-            this.dollsbutton.TabIndex = 2;
-            this.dollsbutton.UseVisualStyleBackColor = true;
-            this.dollsbutton.Click += new System.EventHandler(this.dollsbutton_Click);
+            this.btnaddBarbie.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
+            this.btnaddBarbie.Location = new System.Drawing.Point(130, 173);
+            this.btnaddBarbie.Name = "btnaddBarbie";
+            this.btnaddBarbie.Size = new System.Drawing.Size(60, 37);
+            this.btnaddBarbie.TabIndex = 8;
+            this.btnaddBarbie.UseVisualStyleBackColor = true;
+            this.btnaddBarbie.Click += new System.EventHandler(this.btnaddBarbie_Click);
             // 
             // groupBox2
             // 
@@ -145,7 +160,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.removebtn);
             this.groupBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(26, 185);
+            this.groupBox2.Location = new System.Drawing.Point(26, 260);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(204, 112);
             this.groupBox2.TabIndex = 6;
@@ -179,6 +194,7 @@
             this.removebtn.Size = new System.Drawing.Size(60, 47);
             this.removebtn.TabIndex = 2;
             this.removebtn.UseVisualStyleBackColor = true;
+            this.removebtn.Click += new System.EventHandler(this.removebtn_Click);
             // 
             // groupBox3
             // 
@@ -187,9 +203,9 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(26, 324);
+            this.groupBox3.Location = new System.Drawing.Point(26, 378);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.Size = new System.Drawing.Size(200, 89);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "File:";
@@ -226,7 +242,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 19);
+            this.label5.Location = new System.Drawing.Point(12, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 19);
             this.label5.TabIndex = 9;
@@ -376,45 +392,33 @@
             this.jumpButton.UseVisualStyleBackColor = true;
             this.jumpButton.Click += new System.EventHandler(this.jumpButton_Click);
             // 
+            // toyNameLabel
+            // 
+            this.toyNameLabel.AutoSize = true;
+            this.toyNameLabel.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toyNameLabel.Location = new System.Drawing.Point(371, 42);
+            this.toyNameLabel.Name = "toyNameLabel";
+            this.toyNameLabel.Size = new System.Drawing.Size(0, 38);
+            this.toyNameLabel.TabIndex = 9;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(261, 107);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(368, 317);
+            this.pictureBox1.Size = new System.Drawing.Size(368, 256);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // toyNameLabel
-            // 
-            this.toyNameLabel.AutoSize = true;
-            this.toyNameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toyNameLabel.Location = new System.Drawing.Point(390, 65);
-            this.toyNameLabel.Name = "toyNameLabel";
-            this.toyNameLabel.Size = new System.Drawing.Size(114, 24);
-            this.toyNameLabel.TabIndex = 9;
-            this.toyNameLabel.Text = "Toy\'sName";
-            // 
-            // btnaddBarbie
-            // 
-            this.btnaddBarbie.Image = global::ToyFactory.Properties.Resources.Icojam_Blue_Bits_Math_add;
-            this.btnaddBarbie.Location = new System.Drawing.Point(72, 55);
-            this.btnaddBarbie.Name = "btnaddBarbie";
-            this.btnaddBarbie.Size = new System.Drawing.Size(60, 37);
-            this.btnaddBarbie.TabIndex = 8;
-            this.btnaddBarbie.UseVisualStyleBackColor = true;
-            this.btnaddBarbie.Click += new System.EventHandler(this.btnaddBarbie_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 471);
+            this.ClientSize = new System.Drawing.Size(902, 477);
             this.Controls.Add(this.toyNameLabel);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -435,15 +439,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button dollsbutton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button removebtn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button petButton;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button Loadbtn;
         private System.Windows.Forms.Button saveBtn;
@@ -466,6 +464,12 @@
         private System.Windows.Forms.Button eatButton;
         private System.Windows.Forms.Label toyNameLabel;
         private System.Windows.Forms.Button btnaddBarbie;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton sparkyRadiobtn;
+        private System.Windows.Forms.RadioButton ferbyRadiobtn;
+        private System.Windows.Forms.RadioButton babyRadiobtn;
+        private System.Windows.Forms.RadioButton barbieRadiobtn;
     }
 }
 

@@ -15,13 +15,13 @@ namespace ToyFactory
         string FILE_PATH = "";
         IToys factory;
         GenericToyFactory game = new GenericToyFactory();
-        Form2 dollForm = new Form2();
-        Form3 petForm = new Form3();
+        bool handler = true;
+       
 
         public Form1()
         {
             InitializeComponent();
-            this.pictureBox1.Image = Properties.Resources.eatingdog;
+           
             
         }
 
@@ -36,15 +36,7 @@ namespace ToyFactory
             catch { MessageBox.Show("Sorry, something went wrong"); }
         }
 
-        private void dollsbutton_Click(object sender, EventArgs e)
-        {
-            dollForm.Show();
-        }
-
-        private void petsbutton_Click(object sender, EventArgs e)
-        {
-            petForm.Show();
-        }
+        
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
@@ -70,39 +62,88 @@ namespace ToyFactory
 
         private void btnaddBarbie_Click(object sender, EventArgs e)
         {
-            factory = new KidsToys();
-            game.run(factory, "Monica", "girl");
-            this.pictureBox1.Image = game.avatar();
+                handler = true;
+                if (barbieRadiobtn.Checked)
+                {
+                    factory = new KidsToys();
+                    game.run(factory, textBox1.Text, "girl");
+                    this.pictureBox1.Image = game.avatar();
+                    toyNameLabel.Text = textBox1.Text;
+                }
+                if (babyRadiobtn.Checked)
+                {
+                    factory = new InfantToys();
+                    game.run(factory, textBox1.Text, "girl");
+                    this.pictureBox1.Image = game.avatar();
+                    toyNameLabel.Text = textBox1.Text;
+                }
+                if (ferbyRadiobtn.Checked)
+                {
+                    factory = new KidsToys();
+                    game.run(factory, textBox1.Text, "boy");
+                    this.pictureBox1.Image = game.avatar();
+                    toyNameLabel.Text = textBox1.Text;
+
+                }
+                else if (sparkyRadiobtn.Checked)
+                {
+                    factory = new InfantToys();
+                    game.run(factory, textBox1.Text, "boy");
+                    this.pictureBox1.Image = game.avatar();
+                    toyNameLabel.Text = textBox1.Text;
+                }
+            
+            
         }
 
         private void cryButton_Click(object sender, EventArgs e)
         {
-            game.performAction("cry");
-            this.pictureBox1.Image = game.avatar();
+            if (handler == true)
+            {
+                game.performAction("cry");
+                this.pictureBox1.Image = game.avatar();
+            }
+            else { MessageBox.Show("Please create new toy."); }
         }
 
         private void talkButton_Click(object sender, EventArgs e)
         {
-            game.performAction("talk");
-            this.pictureBox1.Image = game.avatar();
+            if (handler == true)
+            {
+                game.performAction("talk");
+                this.pictureBox1.Image = game.avatar();
+            }
+            else { MessageBox.Show("Please create new toy."); }
         }
 
         private void eatButton_Click(object sender, EventArgs e)
         {
-            game.performAction("eat");
-            this.pictureBox1.Image = game.avatar();
+            if (handler == true)
+            {
+                game.performAction("eat");
+                this.pictureBox1.Image = game.avatar();
+            }
+            else { MessageBox.Show("Please create new toy."); }
         }
 
         private void sleepButton_Click(object sender, EventArgs e)
         {
-            game.performAction("sleep");
-            this.pictureBox1.Image = game.avatar();
+            if (handler == true)
+            {
+                game.performAction("sleep");
+                this.pictureBox1.Image = game.avatar();
+            }
+            else { MessageBox.Show("Please create new toy."); }
         }
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            game.performAction("play");
-            this.pictureBox1.Image = game.avatar();
+            if (handler == true)
+            {
+                game.performAction("play");
+                this.pictureBox1.Image = game.avatar();
+            }
+            else { MessageBox.Show("Please create new toy."); }
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -149,6 +190,15 @@ namespace ToyFactory
                     this.Invalidate();
                 }
             }
+        }
+
+        private void removebtn_Click(object sender, EventArgs e)
+        {
+            this.pictureBox1.Image = null;
+            toyNameLabel.Text = "";
+            pictureBox1.Invalidate();
+            handler = false;
+            
         }
     }
 }

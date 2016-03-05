@@ -73,6 +73,16 @@ namespace ToyFactory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_button_hi {
+            get {
+                object obj = ResourceManager.GetObject("add-button-hi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap babycry {
             get {
                 object obj = ResourceManager.GetObject("babycry", resourceCulture);
