@@ -62,7 +62,7 @@ namespace ToyFactory
             try
             {
                 System.Media.SoundPlayer myPlayer = new System.Media.SoundPlayer();
-                myPlayer.SoundLocation = "../../Sound/barbie_talk.wav";
+                myPlayer.SoundLocation = "../../Sound/barbie_girl.wav";
                 myPlayer.Play();
             }
             catch { MessageBox.Show("Sorry, something went wrong"); }
