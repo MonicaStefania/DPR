@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class AddScrolls:Decorator
+    public class AddScrolls:Decorator
     {
 
         public AddScrolls(ICharacter C) : base(C) { }

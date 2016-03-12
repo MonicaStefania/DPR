@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class AddPVPGear:Decorator
+   public class AddPVPGear:Decorator
     {
         public AddPVPGear(ICharacter C) : base(C) { }
 

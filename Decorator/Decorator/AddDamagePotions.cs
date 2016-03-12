@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class AddDamagePotions:Decorator
+    public class AddDamagePotions:Decorator
     {
 
         public AddDamagePotions(ICharacter C) : base(C) { }

@@ -18,5 +18,26 @@ namespace ProjectTest
             Assert.Equals(current, armor.getDamage());
 
         }
+        [TestMethod]
+        public void TestAddScrolls()
+        {
+            ICharacter myHero = new Mage();
+            double current = myHero.Intelligence();
+
+            AddScrolls scroll = new AddScrolls(myHero);
+            scroll.Intelligence();
+
+            Assert.AreEqual(current, scroll.getIntelligence());
+        }
+        [TestMethod]
+        public void TestAddPVPGear()
+        {
+            ICharacter myHero = new Mage();
+            double current = myHero.Price();
+
+            AddPVPGear gear = new AddPVPGear(myHero);
+
+            Assert.AreEqual(current, gear.getPrice());
+                   }
     }
 }
