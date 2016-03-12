@@ -11,33 +11,31 @@ namespace ProjectTest
         public void TestAddArmor()
         {
             ICharacter myHero = new Mage();
-            double current = myHero.Damage();
+            double current = myHero.Damage() + 15;
             AddArmor armor = new AddArmor(myHero);
             armor.Damage();
 
-            Assert.Equals(current, armor.getDamage());
+            Assert.AreEqual(current, armor.Damage());
 
         }
         [TestMethod]
         public void TestAddScrolls()
         {
             ICharacter myHero = new Mage();
-            double current = myHero.Intelligence();
-
             AddScrolls scroll = new AddScrolls(myHero);
             scroll.Intelligence();
+            double current = myHero.Intelligence() + 150;
 
-            Assert.AreEqual(current, scroll.getIntelligence());
+            Assert.AreEqual(current, scroll.Intelligence());
         }
         [TestMethod]
         public void TestAddPVPGear()
         {
             ICharacter myHero = new Mage();
-            double current = myHero.Price();
-
+            double current = myHero.Price() + 300;
             AddPVPGear gear = new AddPVPGear(myHero);
 
-            Assert.AreEqual(current, gear.getPrice());
-                   }
+            Assert.AreEqual(current, gear.Price());
+        }
     }
 }
