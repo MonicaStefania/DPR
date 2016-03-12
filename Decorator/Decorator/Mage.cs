@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class Mage:ICharacter
+   public class Mage:ICharacter
     {
         public double Damage() { return 70; }
 
