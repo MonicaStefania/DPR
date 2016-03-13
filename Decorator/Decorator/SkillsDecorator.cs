@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    public abstract class Decorator : ICharacter
+    public abstract class SkillsDecorator : ICharacter
     {
         
         public ICharacter character;
@@ -14,7 +14,7 @@ namespace Decorator
         public abstract double getPrice();
         public abstract double getIntelligence();
 
-        public Decorator(ICharacter c)
+        public SkillsDecorator(ICharacter c)
         {
             this.character = c;
         }

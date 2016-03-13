@@ -52,7 +52,7 @@
     <Compile Include="AddScrolls.cs" />
     <Compile Include="AddShield.cs" />
     <Compile Include="AddWeapon.cs" />
-    <Compile Include="Decorator.cs" />
+    <Compile Include="SkillsDecorator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

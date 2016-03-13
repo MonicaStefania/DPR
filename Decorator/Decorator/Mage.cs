@@ -10,7 +10,7 @@ namespace Decorator
     {
         public double Damage() { return 70; }
 
-        public string Description() { return "Warlock Fire Mage"; }
+        public string Description() { return "Undead Fire Mage"; }
 
         public double Intelligence() { return 90; }
         public double Price() { return 100; }

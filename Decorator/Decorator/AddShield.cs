@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class AddShield:Decorator
+    class AddShield:SkillsDecorator
     {
        
         public AddShield(ICharacter C) : base(C) { }

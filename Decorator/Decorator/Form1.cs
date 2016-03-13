@@ -22,7 +22,7 @@ namespace Decorator
             this.lbAvailableOptions.Items.Add("Shield");
             this.lbAvailableOptions.Items.Add("Armor");
             this.lbAvailableOptions.Items.Add("PVP Gear");
-            this.lbAvailableOptions.Items.Add("Damage Poion");
+            this.lbAvailableOptions.Items.Add("Damage Potion");
             this.lbAvailableOptions.Items.Add("Intelligence scroll");
 
 
