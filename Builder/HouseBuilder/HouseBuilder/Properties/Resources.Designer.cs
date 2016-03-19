@@ -123,6 +123,36 @@ namespace HouseBuilder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cabin_house {
+            get {
+                object obj = ResourceManager.GetObject("cabin-house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap country_house {
+            get {
+                object obj = ResourceManager.GetObject("country-house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap family_house {
+            get {
+                object obj = ResourceManager.GetObject("family-house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hopstarter_Sleek_Xp_Software_Windows_Close_Program {
             get {
                 object obj = ResourceManager.GetObject("Hopstarter-Sleek-Xp-Software-Windows-Close-Program", resourceCulture);
@@ -146,6 +176,16 @@ namespace HouseBuilder.Properties {
         internal static System.Drawing.Bitmap Kyo_Tux_Delikate_Info {
             get {
                 object obj = ResourceManager.GetObject("Kyo-Tux-Delikate-Info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vacantion_house {
+            get {
+                object obj = ResourceManager.GetObject("vacantion-house", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

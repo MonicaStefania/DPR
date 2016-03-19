@@ -34,19 +34,19 @@
             this.rbtnCountry = new System.Windows.Forms.RadioButton();
             this.rbtnCabin = new System.Windows.Forms.RadioButton();
             this.rbtnF = new System.Windows.Forms.RadioButton();
+            this.lbInfo = new System.Windows.Forms.Label();
+            this.thePicture = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnFamilyBuild = new System.Windows.Forms.Button();
-            this.thePicture = new System.Windows.Forms.PictureBox();
-            this.lbInfo = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -110,6 +110,23 @@
             this.rbtnF.Text = "Family house";
             this.rbtnF.UseVisualStyleBackColor = true;
             // 
+            // lbInfo
+            // 
+            this.lbInfo.AutoSize = true;
+            this.lbInfo.Location = new System.Drawing.Point(344, 309);
+            this.lbInfo.Name = "lbInfo";
+            this.lbInfo.Size = new System.Drawing.Size(0, 13);
+            this.lbInfo.TabIndex = 6;
+            // 
+            // thePicture
+            // 
+            this.thePicture.Image = global::HouseBuilder.Properties.Resources.vacantion_house;
+            this.thePicture.Location = new System.Drawing.Point(321, 12);
+            this.thePicture.Name = "thePicture";
+            this.thePicture.Size = new System.Drawing.Size(415, 284);
+            this.thePicture.TabIndex = 5;
+            this.thePicture.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HouseBuilder.Properties.Resources._1458418681_kfm_home1;
@@ -156,22 +173,6 @@
             this.btnFamilyBuild.UseVisualStyleBackColor = true;
             this.btnFamilyBuild.Click += new System.EventHandler(this.btnFamilyBuild_Click);
             // 
-            // thePicture
-            // 
-            this.thePicture.Location = new System.Drawing.Point(321, 12);
-            this.thePicture.Name = "thePicture";
-            this.thePicture.Size = new System.Drawing.Size(415, 284);
-            this.thePicture.TabIndex = 5;
-            this.thePicture.TabStop = false;
-            // 
-            // lbInfo
-            // 
-            this.lbInfo.AutoSize = true;
-            this.lbInfo.Location = new System.Drawing.Point(344, 309);
-            this.lbInfo.Name = "lbInfo";
-            this.lbInfo.Size = new System.Drawing.Size(0, 13);
-            this.lbInfo.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,11 +187,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
