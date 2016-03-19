@@ -12,23 +12,12 @@ namespace HouseBuilder
 {
     public partial class informatioForm : Form
     {
-        informatioForm myForm;
         public informatioForm()
         {
             InitializeComponent();
-             myForm = new informatioForm();
-        }
-        public void fillhouseInformation(string info)
-        {
-
-            labelInformation.Text = info;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-            myForm.Close();
-            
-        }
+
     }
 }

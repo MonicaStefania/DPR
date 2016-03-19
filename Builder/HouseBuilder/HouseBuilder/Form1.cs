@@ -45,8 +45,8 @@ namespace HouseBuilder
             IHouseBuilder familyHouse = new FamilyHousebuilder();
             architect.BuildHouse(familyHouse);
             House myHouse = familyHouse.GetHouse();
-            infoForm.fillhouseInformation(myHouse.ToString());
-            infoForm.Show();
+            //infoForm.fillhouseInformation(myHouse.ToString());
+            //infoForm.Show();
         }
 
         private void btnCabinInfo_Click(object sender, EventArgs e)
@@ -54,8 +54,8 @@ namespace HouseBuilder
             IHouseBuilder cabinHouse = new CabinHouseBuilder();
             architect.BuildHouse(cabinHouse);
             House cHouse = cabinHouse.GetHouse();
-            infoForm.fillhouseInformation(cHouse.ToString());
-            infoForm.Show();
+            //infoForm.fillhouseInformation(cHouse.ToString());
+            //infoForm.Show();
         }
     }
 }
