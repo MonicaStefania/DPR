@@ -12,13 +12,13 @@ namespace HouseBuilder
 {
     public partial class Form1 : Form
     {
-        informatioForm infoForm;
+        
         ArchitectDirector architect;
         public Form1()
         {
             
             InitializeComponent();
-            infoForm = new informatioForm();
+            
             architect = new ArchitectDirector();
         }
 
@@ -34,28 +34,52 @@ namespace HouseBuilder
 
         private void btnFamilyBuild_Click(object sender, EventArgs e)
         {
-           
-            
+            if (rbtnF.Checked)
+            {
+                IHouseBuilder familyHouse = new FamilyHousebuilder();
+                architect.BuildHouse(familyHouse);
+                House myHouse = familyHouse.GetHouse();
+                lbInfo.Text = myHouse.ToString();
+                //thePicture.Image = Properties.Resources.;
+                thePicture.Refresh();
+                thePicture.Visible = true;
+            }
+            if (rbtnCabin.Checked)
+            {
+                IHouseBuilder cabinHouse = new CabinHouseBuilder();
+                architect.BuildHouse(cabinHouse);
+                House cHouse = cabinHouse.GetHouse();
+                lbInfo.Text = cHouse.ToString();
+
+            }
+            if (rbtnCountry.Checked)
+            {
+                IHouseBuilder countryHouse = new CountryHouseBuilder();
+                architect.BuildHouse(countryHouse);
+                House cabHouse = countryHouse.GetHouse();
+                lbInfo.Text = cabHouse.ToString();
+            }
+            else if (rbtnVacantion.Checked) {
+                IHouseBuilder vacHouse = new VacationHouseBuilder();
+                architect.BuildHouse(vacHouse);
+                House vacantionHouse = vacHouse.GetHouse();
+                lbInfo.Text = vacantionHouse.ToString();
+            }
+
 
         }
 
         private void btnFamilyInfo_Click(object sender, EventArgs e)
         {
             
-            IHouseBuilder familyHouse = new FamilyHousebuilder();
-            architect.BuildHouse(familyHouse);
-            House myHouse = familyHouse.GetHouse();
-            //infoForm.fillhouseInformation(myHouse.ToString());
-            //infoForm.Show();
+           
+           
         }
 
         private void btnCabinInfo_Click(object sender, EventArgs e)
         {
-            IHouseBuilder cabinHouse = new CabinHouseBuilder();
-            architect.BuildHouse(cabinHouse);
-            House cHouse = cabinHouse.GetHouse();
-            //infoForm.fillhouseInformation(cHouse.ToString());
-            //infoForm.Show();
+            
+            
         }
     }
 }

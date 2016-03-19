@@ -30,165 +30,85 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnVacationBuilding = new System.Windows.Forms.Button();
-            this.btnVacantionInfo = new System.Windows.Forms.Button();
-            this.btnCountryBuild = new System.Windows.Forms.Button();
-            this.btnCountryInfo = new System.Windows.Forms.Button();
-            this.btnCabinBuild = new System.Windows.Forms.Button();
-            this.btnCabinInfo = new System.Windows.Forms.Button();
-            this.btnFamilyBuild = new System.Windows.Forms.Button();
-            this.btnFamilyInfo = new System.Windows.Forms.Button();
+            this.rbtnVacantion = new System.Windows.Forms.RadioButton();
+            this.rbtnCountry = new System.Windows.Forms.RadioButton();
+            this.rbtnCabin = new System.Windows.Forms.RadioButton();
+            this.rbtnF = new System.Windows.Forms.RadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnFamilyBuild = new System.Windows.Forms.Button();
+            this.thePicture = new System.Windows.Forms.PictureBox();
+            this.lbInfo = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnVacationBuilding);
-            this.groupBox1.Controls.Add(this.btnVacantionInfo);
-            this.groupBox1.Controls.Add(this.btnCountryBuild);
-            this.groupBox1.Controls.Add(this.btnCountryInfo);
-            this.groupBox1.Controls.Add(this.btnCabinBuild);
-            this.groupBox1.Controls.Add(this.btnCabinInfo);
-            this.groupBox1.Controls.Add(this.btnFamilyBuild);
-            this.groupBox1.Controls.Add(this.btnFamilyInfo);
+            this.groupBox1.Controls.Add(this.rbtnVacantion);
+            this.groupBox1.Controls.Add(this.rbtnCountry);
+            this.groupBox1.Controls.Add(this.rbtnCabin);
+            this.groupBox1.Controls.Add(this.rbtnF);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 356);
+            this.groupBox1.Size = new System.Drawing.Size(209, 356);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Build your dream house";
             // 
-            // label1
+            // rbtnVacantion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Family house";
+            this.rbtnVacantion.AutoSize = true;
+            this.rbtnVacantion.Location = new System.Drawing.Point(104, 279);
+            this.rbtnVacantion.Name = "rbtnVacantion";
+            this.rbtnVacantion.Size = new System.Drawing.Size(105, 17);
+            this.rbtnVacantion.TabIndex = 17;
+            this.rbtnVacantion.TabStop = true;
+            this.rbtnVacantion.Text = "Vacantion house";
+            this.rbtnVacantion.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // rbtnCountry
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Cabin house";
+            this.rbtnCountry.AutoSize = true;
+            this.rbtnCountry.Location = new System.Drawing.Point(104, 216);
+            this.rbtnCountry.Name = "rbtnCountry";
+            this.rbtnCountry.Size = new System.Drawing.Size(93, 17);
+            this.rbtnCountry.TabIndex = 16;
+            this.rbtnCountry.TabStop = true;
+            this.rbtnCountry.Text = "Country house";
+            this.rbtnCountry.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // rbtnCabin
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Country house";
+            this.rbtnCabin.AutoSize = true;
+            this.rbtnCabin.Location = new System.Drawing.Point(104, 140);
+            this.rbtnCabin.Name = "rbtnCabin";
+            this.rbtnCabin.Size = new System.Drawing.Size(84, 17);
+            this.rbtnCabin.TabIndex = 15;
+            this.rbtnCabin.TabStop = true;
+            this.rbtnCabin.Text = "Cabin house";
+            this.rbtnCabin.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // rbtnF
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 251);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Vacantion house";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // btnVacationBuilding
-            // 
-            this.btnVacationBuilding.Image = global::HouseBuilder.Properties.Resources._1458418956_control_center2;
-            this.btnVacationBuilding.Location = new System.Drawing.Point(157, 267);
-            this.btnVacationBuilding.Name = "btnVacationBuilding";
-            this.btnVacationBuilding.Size = new System.Drawing.Size(59, 55);
-            this.btnVacationBuilding.TabIndex = 10;
-            this.btnVacationBuilding.UseVisualStyleBackColor = true;
-            // 
-            // btnVacantionInfo
-            // 
-            this.btnVacantionInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnVacantionInfo.Image")));
-            this.btnVacantionInfo.Location = new System.Drawing.Point(104, 267);
-            this.btnVacantionInfo.Name = "btnVacantionInfo";
-            this.btnVacantionInfo.Size = new System.Drawing.Size(47, 41);
-            this.btnVacantionInfo.TabIndex = 9;
-            this.btnVacantionInfo.UseVisualStyleBackColor = true;
-            // 
-            // btnCountryBuild
-            // 
-            this.btnCountryBuild.Image = global::HouseBuilder.Properties.Resources._1458418956_control_center2;
-            this.btnCountryBuild.Location = new System.Drawing.Point(157, 192);
-            this.btnCountryBuild.Name = "btnCountryBuild";
-            this.btnCountryBuild.Size = new System.Drawing.Size(59, 55);
-            this.btnCountryBuild.TabIndex = 8;
-            this.btnCountryBuild.UseVisualStyleBackColor = true;
-            // 
-            // btnCountryInfo
-            // 
-            this.btnCountryInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnCountryInfo.Image")));
-            this.btnCountryInfo.Location = new System.Drawing.Point(104, 192);
-            this.btnCountryInfo.Name = "btnCountryInfo";
-            this.btnCountryInfo.Size = new System.Drawing.Size(47, 41);
-            this.btnCountryInfo.TabIndex = 7;
-            this.btnCountryInfo.UseVisualStyleBackColor = true;
-            // 
-            // btnCabinBuild
-            // 
-            this.btnCabinBuild.Image = global::HouseBuilder.Properties.Resources._1458418956_control_center2;
-            this.btnCabinBuild.Location = new System.Drawing.Point(157, 116);
-            this.btnCabinBuild.Name = "btnCabinBuild";
-            this.btnCabinBuild.Size = new System.Drawing.Size(59, 55);
-            this.btnCabinBuild.TabIndex = 6;
-            this.btnCabinBuild.UseVisualStyleBackColor = true;
-            // 
-            // btnCabinInfo
-            // 
-            this.btnCabinInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnCabinInfo.Image")));
-            this.btnCabinInfo.Location = new System.Drawing.Point(104, 116);
-            this.btnCabinInfo.Name = "btnCabinInfo";
-            this.btnCabinInfo.Size = new System.Drawing.Size(47, 41);
-            this.btnCabinInfo.TabIndex = 5;
-            this.btnCabinInfo.UseVisualStyleBackColor = true;
-            this.btnCabinInfo.Click += new System.EventHandler(this.btnCabinInfo_Click);
-            // 
-            // btnFamilyBuild
-            // 
-            this.btnFamilyBuild.Image = global::HouseBuilder.Properties.Resources._1458418956_control_center2;
-            this.btnFamilyBuild.Location = new System.Drawing.Point(157, 46);
-            this.btnFamilyBuild.Name = "btnFamilyBuild";
-            this.btnFamilyBuild.Size = new System.Drawing.Size(59, 55);
-            this.btnFamilyBuild.TabIndex = 4;
-            this.btnFamilyBuild.UseVisualStyleBackColor = true;
-            this.btnFamilyBuild.Click += new System.EventHandler(this.btnFamilyBuild_Click);
-            // 
-            // btnFamilyInfo
-            // 
-            this.btnFamilyInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnFamilyInfo.Image")));
-            this.btnFamilyInfo.Location = new System.Drawing.Point(104, 60);
-            this.btnFamilyInfo.Name = "btnFamilyInfo";
-            this.btnFamilyInfo.Size = new System.Drawing.Size(47, 41);
-            this.btnFamilyInfo.TabIndex = 1;
-            this.btnFamilyInfo.UseVisualStyleBackColor = true;
-            this.btnFamilyInfo.Click += new System.EventHandler(this.btnFamilyInfo_Click);
+            this.rbtnF.AutoSize = true;
+            this.rbtnF.Location = new System.Drawing.Point(104, 60);
+            this.rbtnF.Name = "rbtnF";
+            this.rbtnF.Size = new System.Drawing.Size(86, 17);
+            this.rbtnF.TabIndex = 14;
+            this.rbtnF.TabStop = true;
+            this.rbtnF.Text = "Family house";
+            this.rbtnF.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -226,12 +146,41 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnFamilyBuild
+            // 
+            this.btnFamilyBuild.Image = global::HouseBuilder.Properties.Resources._1458418956_control_center2;
+            this.btnFamilyBuild.Location = new System.Drawing.Point(224, 150);
+            this.btnFamilyBuild.Name = "btnFamilyBuild";
+            this.btnFamilyBuild.Size = new System.Drawing.Size(59, 55);
+            this.btnFamilyBuild.TabIndex = 4;
+            this.btnFamilyBuild.UseVisualStyleBackColor = true;
+            this.btnFamilyBuild.Click += new System.EventHandler(this.btnFamilyBuild_Click);
+            // 
+            // thePicture
+            // 
+            this.thePicture.Location = new System.Drawing.Point(321, 12);
+            this.thePicture.Name = "thePicture";
+            this.thePicture.Size = new System.Drawing.Size(415, 284);
+            this.thePicture.TabIndex = 5;
+            this.thePicture.TabStop = false;
+            // 
+            // lbInfo
+            // 
+            this.lbInfo.AutoSize = true;
+            this.lbInfo.Location = new System.Drawing.Point(344, 309);
+            this.lbInfo.Name = "lbInfo";
+            this.lbInfo.Size = new System.Drawing.Size(0, 13);
+            this.lbInfo.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 359);
+            this.Controls.Add(this.lbInfo);
+            this.Controls.Add(this.thePicture);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnFamilyBuild);
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -241,7 +190,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thePicture)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -253,17 +204,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnFamilyBuild;
-        private System.Windows.Forms.Button btnFamilyInfo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnVacationBuilding;
-        private System.Windows.Forms.Button btnVacantionInfo;
-        private System.Windows.Forms.Button btnCountryBuild;
-        private System.Windows.Forms.Button btnCountryInfo;
-        private System.Windows.Forms.Button btnCabinBuild;
-        private System.Windows.Forms.Button btnCabinInfo;
+        private System.Windows.Forms.RadioButton rbtnVacantion;
+        private System.Windows.Forms.RadioButton rbtnCountry;
+        private System.Windows.Forms.RadioButton rbtnCabin;
+        private System.Windows.Forms.RadioButton rbtnF;
+        private System.Windows.Forms.PictureBox thePicture;
+        private System.Windows.Forms.Label lbInfo;
     }
 }
 
