@@ -21,7 +21,7 @@ namespace HouseBuilder
 
         public void AddPrice()
         {
-            house.Price = 50.000;
+            house.Price = 50000;
         }
 
         public void AddSize()
