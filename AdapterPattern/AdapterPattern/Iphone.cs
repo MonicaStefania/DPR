@@ -10,7 +10,7 @@ namespace AdapterPattern
     {
         public string RunIosGame(string info)
         {
-            return "Iphone " + info;
+            return info + "\nrunning";
         }
     }
 }

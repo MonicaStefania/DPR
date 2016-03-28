@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
-    interface IIos
+   public interface IIos
     {
         string RunIosGame(String info);
         

@@ -10,7 +10,7 @@ namespace AdapterPattern
     {
         public string RunAndroidGame(string info)
         {
-            return "Samsung " + info;
+            return   info + "\nrunning";
         }
     }
 }

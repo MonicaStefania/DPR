@@ -10,9 +10,9 @@ namespace AdapterPattern
     {
         private IIos iosPhone;
         IIos ios;
-        GameAdapter(IIos ios) { this.iosPhone = ios; }
-        string TransmitGame(String info) { return TransformGame(iosPhone.RunIosGame(info)); }
-        string TransformGame(String info) { return "the game" + info +"can now be run on samsung"  ; }
+        public GameAdapter(IIos ios) { this.iosPhone = ios; }
+        public string TransmitGame(String info) { return TransformGame(iosPhone.RunIosGame(info)); }
+        public string TransformGame(String info) { return "the game" +  " " + info + " " + "can now be run on samsung"  ; }
 
         public string RunAndroidGame(string info)
         {
