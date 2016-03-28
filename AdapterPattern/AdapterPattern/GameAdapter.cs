@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
-    class GameAdapter
+    class GameAdapter:IAndroid
     {
+        private IIos iosPhone;
         IIos ios;
-        GameAdapter(IIos ios) { }
-        string TransmitGame(String info) { return ""; }
-        string TransformGame(String info) { return ""; }
+        GameAdapter(IIos ios) { this.iosPhone = ios; }
+        string TransmitGame(String info) { return TransformGame(iosPhone.RunIosGame(info)); }
+        string TransformGame(String info) { return "the game" + info +"can now be run on samsung"  ; }
+
+        public string RunAndroidGame(string info)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

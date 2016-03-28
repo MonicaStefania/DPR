@@ -10,7 +10,7 @@ namespace AdapterPattern
     {
         public string RunAndroidGame(string info)
         {
-            throw new NotImplementedException();
+            return "Samsung " + info;
         }
     }
 }

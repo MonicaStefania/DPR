@@ -10,7 +10,7 @@ namespace AdapterPattern
     {
         public string RunIosGame(string info)
         {
-            throw new NotImplementedException();
+            return "Iphone " + info;
         }
     }
 }
