@@ -14,7 +14,7 @@ namespace AdapterPattern
     {
         IIos ioS;
         IAndroid android;
-        GameAdapter adapter;
+        IosToAndroidAdapter adapter;
             public Form1()
         {
             InitializeComponent();
@@ -42,8 +42,8 @@ namespace AdapterPattern
 
         private void button1_Click(object sender, EventArgs e)
         {
-            adapter = new GameAdapter( new Iphone());
-            lbInfo.Text = adapter.TransformGame(txtboxInfo.Text);
+            adapter = new IosToAndroidAdapter( new Iphone());
+            lbInfo.Text = adapter.ProcessGame(txtboxInfo.Text);
             
         }
     }

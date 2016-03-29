@@ -52,7 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameAdapter.cs" />
+    <Compile Include="IosToAndroidAdapter.cs" />
     <Compile Include="IAndroid.cs" />
     <Compile Include="IIos.cs" />
     <Compile Include="Iphone.cs" />
